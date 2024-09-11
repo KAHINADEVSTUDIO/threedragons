@@ -1,3 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
+html {
+  font-size: 100%;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #F4F3EE;
+  background-color: #292929;
+}
+
+a {
+  color: #F4F3EE;
+  font-family: "Noto Sans KR", sans-serif;
+  transition: color 0.3s ease-in-out;
+}
+a:hover, a:focus {
+  color: #e0ddcf;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  letter-spacing: 0.04rem;
+  font-weight: 700;
+  font-family: "Dela Gothic One", sans-serif;
+}
+
+p {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+h1 {
+  font-size: 2.125 rem;
+}
+
+h2 {
+  font-size: 1.875 rem;
+}
+
+h3 {
+  font-size: 1.625 rem;
+}
+
+h4 {
+  font-size: 1.375 rem;
+}
+
+h5 {
+  font-size: 1.125 rem;
+}
+
+h6 {
+  font-size: 0.875 rem;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 8px;
+}
+
+.small-text {
+  font-size: 0.625 rem;
+  color: black;
+}
+
+header {
+  width: 100%;
+  transition: background-color 0.3s;
+}
+header .navbar-brand,
+header .nav-link {
+  color: #F4F3EE;
+}
+header .navbar-brand {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  font-family: "Kanit", sans-serif;
+}
+header .nav-item .nav-link {
+  font-weight: 400;
+  font-size: px-to-tem(16px);
+  transition: all 0.5s ease-in-out !important;
+}
+header .nav-item .nav-link:hover, header .nav-item .nav-link:focus, header .nav-item .nav-link:active {
+  color: #9A031E;
+  border-bottom: 1px solid #9A031E;
+}
+@media screen and (max-width: 991px) {
+  header .nav-item .nav-link:hover, header .nav-item .nav-link:focus, header .nav-item .nav-link:active {
+    border-bottom: none !important;
+  }
+}
+header .toggler {
+  color: #F4F3EE;
+  border: none;
+  padding: 15px;
+  display: none !important;
+  background-color: #9A031E;
+}
+@media screen and (max-width: 991px) {
+  header .toggler {
+    display: block !important;
+  }
+}
+
+header.fixed {
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #292929;
+}
+
+.modal-languages .icon-flag {
+  width: 18px;
+}
+.modal-languages .name {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.modal-languages .button-modal {
+  color: #F4F3EE;
+  padding: 0px !important;
+  border: none !important;
+}
+.modal-languages .modal-content {
+  padding: 1.3rem;
+  background-color: #292929;
+}
+.modal-languages .modal-content .modal-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: none !important;
+}
+.modal-languages .modal-content .modal-header .close {
+  color: #9A031E;
+  font-size: 24px;
+  background-color: transparent;
+  border: none !important;
+}
+.modal-languages .modal-content .modal-body .flag-list {
+  padding: 0px !important;
+}
+.modal-languages .modal-content .modal-body .flag-list .link-flag {
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  border: 1px solid #F4F3EE;
+}
+.modal-languages .modal-content .modal-body .flag-list .link-flag .name {
+  margin-right: 0px !important;
+}
+.modal-languages .modal-content .modal-body .flag-list .link-flag:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
 
 /*# sourceMappingURL=main.css.map */

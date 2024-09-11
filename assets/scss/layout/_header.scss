@@ -1,0 +1,54 @@
+header {
+    width: 100%;
+    transition: background-color 0.3s;
+
+    .navbar-brand,
+    .nav-link {
+        color: $secondary-color;
+    }
+
+    .navbar-brand {
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+        font-family: $font-family-brand;
+    }
+
+    .nav-item {
+        .nav-link {
+            font-weight: 400;
+            font-size: px-to-tem(16px);
+            transition: all 0.5s ease-in-out !important;
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: $tertiary-color;
+                border-bottom: 1px solid $tertiary-color;
+
+                @media screen and (max-width: $breakpoint-lg) {
+                    border-bottom: none !important;
+                }
+            }
+        }
+    }
+
+    .toggler {
+        color: $secondary-color;
+        border: none;
+        padding: 15px;
+        display: none !important;
+        background-color: $tertiary-color;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            display: block !important;
+        }
+    }
+}
+
+header.fixed {
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: $primary-color;
+}

@@ -1,0 +1,14 @@
+// Center
+@mixin center-text {
+    text-align: center;
+}
+
+// Border radius 
+@mixin rounded($radius: 6px) {
+    border-radius: $radius;
+}
+
+// Transition
+@mixin transition ($property: all, $duration: 0.3s, $ease: ease-in-out) {
+    transition: $property $duration $ease;
+}
