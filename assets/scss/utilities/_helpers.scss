@@ -16,8 +16,21 @@
     position: relative;
 }
 
+// Image
+.image-absolute {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -99;
+}
+
 // Text transform
 
 .uppercase {
     text-transform: uppercase;
+}
+
+// Margin 
+.mt-2 {
+    margin-top: $spacing-medium !important;
 }

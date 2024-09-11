@@ -1,6 +1,5 @@
 header {
     width: 100%;
-    transition: background-color 0.3s;
 
     .navbar-brand,
     .nav-link {
@@ -17,19 +16,25 @@ header {
     .nav-item {
         .nav-link {
             font-weight: 400;
-            font-size: px-to-tem(16px);
+            font-size: px-to-rem(16px);
             transition: all 0.5s ease-in-out !important;
 
             &:hover,
             &:focus,
             &:active {
                 color: $tertiary-color;
-                border-bottom: 1px solid $tertiary-color;
 
                 @media screen and (max-width: $breakpoint-lg) {
-                    border-bottom: none !important;
+                    color: $primary-color;
                 }
             }
+        }
+    }
+
+    .navbar-collapse {
+        @media screen and (max-width: $breakpoint-lg) {
+            padding: 3rem;
+            background-color: $tertiary-color;
         }
     }
 
@@ -44,11 +49,4 @@ header {
             display: block !important;
         }
     }
-}
-
-header.fixed {
-    top: 0;
-    left: 0;
-    position: fixed;
-    background-color: $primary-color;
 }

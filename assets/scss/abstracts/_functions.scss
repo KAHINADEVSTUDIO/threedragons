@@ -1,6 +1,6 @@
 // Pixels to rem 
 @function px-to-rem($px, $base-font-size: 16px) {
-    @return #{$px / $base-font-size} rem;
+    @return #{$px / $base-font-size}rem;
 }
 
 // Darken color

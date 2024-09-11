@@ -1,26 +1,30 @@
 // Titles 
 h1 {
-    font-size: px-to-rem(34px);
+    font-size: px-to-rem(44px);
+
+    @media screen and (max-width: $breakpoint-sm) {
+        font-size: px-to-rem(30px);
+    }
 }
 
 h2 {
-    font-size: px-to-rem(30px);
+    font-size: px-to-rem(40px);
 }
 
 h3 {
-    font-size: px-to-rem(26px);
+    font-size: px-to-rem(36px);
 }
 
 h4 {
-    font-size: px-to-rem(22px);
+    font-size: px-to-rem(32px);
 }
 
 h5 {
-    font-size: px-to-rem(18px);
+    font-size: px-to-rem(24px);
 }
 
 h6 {
-    font-size: px-to-rem(14px);
+    font-size: px-to-rem(20px);
 }
 
 // Text 
@@ -28,10 +32,14 @@ p {
     font-size: $font-size-base;
     line-height: $line-height-base;
     margin: $spacing-small;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        font-size: 15px !important;
+    }
 }
 
 // Small text
 .small-text {
-    font-size: px-to-rem(10px);
+    font-size: px-to-rem(16px);
     color: darken($primary-color, 20%);
 }

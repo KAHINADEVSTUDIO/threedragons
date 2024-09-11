@@ -1,18 +1,20 @@
-.modal-languages {
-    .icon-flag {
-        width: 18px;
-    }
+.icon-flag {
+    width: 18px;
+}
 
-    .name {
-        margin-left: 5px;
-        margin-right: 5px;;
-    }
+.flag-name {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: px-to-rem(16px) !important;
+}
 
-    .button-modal {
-        color: $secondary-color;
-        padding: 0px !important;
-        border: none !important;
-    }
+.button-modal {
+    color: $secondary-color;
+    padding: 0px !important;
+    border: none !important;
+}
+
+.modal {
 
     .modal-content {
         padding: 1.3rem;
