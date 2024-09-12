@@ -17,11 +17,17 @@
 }
 
 // Image
+.image-fixed,
 .image-absolute {
-    top: 0;
     left: 0;
     width: 100%;
     z-index: -99;
+}
+
+.image-absolute {
+    top: 0;
+    left: 0;
+    position: absolute;
 }
 
 // Text transform
@@ -31,6 +37,29 @@
 }
 
 // Margin 
+.mt-1 {
+    margin-top: $spacing-small !important;
+}
+
 .mt-2 {
     margin-top: $spacing-medium !important;
+}
+
+// Pading
+.pd-6 {
+    padding: 6rem 0rem;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        padding: 5rem 0.5rem;
+    }
+}
+
+// Background color 
+.other-color {
+    background-color: $other-color;
+}
+
+// Colors 
+.text-tertiary {
+    color: $tertiary-color;
 }

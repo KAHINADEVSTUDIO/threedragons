@@ -58,7 +58,12 @@ p {
 }
 
 section {
-  padding: 10rem 0rem;
+  padding: 6rem 0rem;
+}
+@media screen and (max-width: 576px) {
+  section {
+    padding: 5rem 0.5rem !important;
+  }
 }
 
 h1 {
@@ -73,24 +78,50 @@ h1 {
 h2 {
   font-size: 2.5rem;
 }
+@media screen and (max-width: 576px) {
+  h2 {
+    font-size: 1.625rem;
+  }
+}
 
 h3 {
   font-size: 2.25rem;
+}
+@media screen and (max-width: 576px) {
+  h3 {
+    font-size: 1.375rem;
+  }
 }
 
 h4 {
   font-size: 2rem;
 }
+@media screen and (max-width: 576px) {
+  h4 {
+    font-size: 1.125rem;
+  }
+}
 
 h5 {
   font-size: 1.5rem;
+}
+@media screen and (max-width: 576px) {
+  h5 {
+    font-size: 0.875rem;
+  }
 }
 
 h6 {
   font-size: 1.25rem;
 }
+@media screen and (max-width: 576px) {
+  h6 {
+    font-size: 0.625rem;
+  }
+}
 
 p {
+  font-weight: 300;
   font-size: 18.6px;
   line-height: 1.5;
   margin: 8px;
@@ -99,6 +130,10 @@ p {
   p {
     font-size: 15px !important;
   }
+}
+
+strong {
+  font-weight: 600;
 }
 
 .small-text {
@@ -164,12 +199,17 @@ header .toggler {
   background-color: #292929;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  color: #F4F3EE;
   background-color: #9A031E;
 }
 
 .btn-secondary {
   color: #292929;
   background-color: #F4F3EE;
+}
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+  color: #F4F3EE;
+  background-color: #393939;
 }
 
 .btn-tertiary {
@@ -185,6 +225,33 @@ header .toggler {
   .buttons-group .btn:last-child {
     margin-top: 1rem;
   }
+}
+
+.card {
+  border: none;
+  background-color: transparent;
+}
+
+.card-dish .dish-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.card-dish .dish-button .content {
+  margin-top: 25%;
+  padding: 0 2rem;
+}
+@media screen and (max-width: 991px) {
+  .card-dish .dish-button .content {
+    margin-top: 20%;
+  }
+}
+.card-dish:hover .dish-button, .card-dish:focus .dish-button, .card-dish:active .dish-button {
+  opacity: 1;
 }
 
 .icon-flag {
@@ -234,6 +301,22 @@ header .toggler {
   margin-bottom: 20px;
 }
 
+.translations {
+  display: flex;
+  justify-content: center;
+}
+.translations .p-translations {
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border: 1.5px solid #9A031E !important;
+}
+@media screen and (max-width: 576px) {
+  .translations .p-translations {
+    font-size: 0.75rem !important;
+  }
+}
+
 .fixed {
   position: fixed;
 }
@@ -250,19 +333,46 @@ header .toggler {
   position: relative;
 }
 
+.image-fixed,
 .image-absolute {
-  top: 0;
   left: 0;
   width: 100%;
   z-index: -99;
+}
+
+.image-absolute {
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 .uppercase {
   text-transform: uppercase;
 }
 
+.mt-1 {
+  margin-top: 8px !important;
+}
+
 .mt-2 {
   margin-top: 2rem !important;
+}
+
+.pd-6 {
+  padding: 6rem 0rem;
+}
+@media screen and (max-width: 576px) {
+  .pd-6 {
+    padding: 5rem 0.5rem;
+  }
+}
+
+.other-color {
+  background-color: #2c2c2c;
+}
+
+.text-tertiary {
+  color: #9A031E;
 }
 
 .hero {
@@ -270,7 +380,7 @@ header .toggler {
 }
 @media screen and (max-width: 576px) {
   .hero {
-    padding: 6rem 0.5rem;
+    padding: 10rem 0.5rem !important;
   }
 }
 .hero img {
@@ -281,6 +391,89 @@ header .toggler {
   .hero img {
     height: 115vh !important;
   }
+}
+
+.philosophy {
+  padding: 0rem;
+}
+@media screen and (max-width: 576px) {
+  .philosophy .lantern {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .philosophy .lantern {
+    width: 30%;
+  }
+}
+.philosophy .top-lantern {
+  left: 0;
+}
+.philosophy .top-right-lantern {
+  right: 0;
+}
+@media screen and (max-width: 576px) {
+  .philosophy .top-right-lantern {
+    display: none !important;
+  }
+}
+.philosophy .content {
+  z-index: 99 !important;
+}
+@media screen and (max-width: 576px) {
+  .philosophy .content {
+    padding-bottom: 0rem !important;
+  }
+}
+
+.reservation-ordering img {
+  right: 0px !important;
+  height: 50vh;
+}
+@media screen and (max-width: 576px) {
+  .reservation-ordering h3 {
+    margin-top: 4rem;
+  }
+}
+.reservation-ordering .content {
+  position: relative;
+}
+.reservation-ordering .content p {
+  z-index: 9;
+}
+
+@media screen and (max-width: 991px) {
+  .location p {
+    margin-bottom: 2rem;
+  }
+}
+.location .content {
+  padding: 3rem;
+}
+@media screen and (max-width: 576px) {
+  .location .content {
+    padding: 3rem 1rem !important;
+  }
+}
+
+.bg-dark {
+  background-color: #292929 !important;
+}
+
+.bg-light {
+  background-color: #F4F3EE !important;
+}
+
+.bg-tertiary {
+  background-color: #9A031E !important;
+}
+
+.text-white {
+  color: #F4F3EE !important;
+}
+
+.text-dark {
+  color: #292929 !important;
 }
 
 /*# sourceMappingURL=main.css.map */

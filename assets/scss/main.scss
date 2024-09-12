@@ -17,9 +17,13 @@
 @import "components/cards.scss";
 @import "components/forms.scss";
 @import "components/modal.scss";
+@import "components/translations.scss";
 
 // Utilities
 @import "utilities/helpers.scss";
 
 // Pages 
 @import "pages/home.scss";
+
+// Bootstrap 
+@import "vendors/bootstrap-custom.scss";

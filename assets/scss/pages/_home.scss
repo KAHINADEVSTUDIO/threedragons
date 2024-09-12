@@ -2,7 +2,7 @@
     padding: 20rem 0rem;
 
     @media screen and (max-width: $breakpoint-sm) {
-        padding: 6rem 0.5rem;
+        padding: 10rem 0.5rem !important;
     }
 
     img {
@@ -11,6 +11,96 @@
 
         @media screen and (max-width: $breakpoint-xs) {
             height: 115vh !important;
+        }
+    }
+}
+
+.philosophy {
+    padding: 0rem;
+
+    .lantern {
+        @media screen and (max-width: $breakpoint-sm) {
+            width: 100% !important;
+        }
+
+        @media screen and (max-width: $breakpoint-lg) {
+            width: 30%;
+        }
+    }
+
+    .top-lantern {
+        left: 0;
+    }
+
+    .top-right-lantern {
+        right: 0;
+
+        @media screen and (max-width: $breakpoint-sm) {
+            display: none !important;
+        }
+    }
+
+    .content {
+        z-index: 99 !important;
+
+        @media screen and (max-width: $breakpoint-sm) {
+            padding-bottom: 0rem !important;
+        }
+    }
+}
+
+.testimony {
+    // img {
+    //     height: 66vh;
+    //     margin-top: -4%;
+    //     position: absolute;
+
+    //     @media screen and (max-width: $breakpoint-sm) {
+    //         height: 35vh !important;
+    //         margin-top: -4% !important;
+    //         margin-left: 10% !important;
+    //     }
+
+    //     @media screen and (max-width: $breakpoint-lg) {
+    //         height: 36vh;
+    //         margin-top: 2%;
+    //         margin-left: 18%;
+    //     }
+    // }
+}
+
+.reservation-ordering {
+    img {
+        right: 0px !important;
+        height: 50vh;
+    }
+
+    h3 {
+        @media screen and (max-width: $breakpoint-sm) {
+            margin-top: 4rem;
+        }
+    }
+
+    .content {
+        position: relative;
+
+        p {
+            z-index: 9;
+        }
+    }
+}
+
+.location {
+    p {
+        @media screen and (max-width: $breakpoint-lg) {
+            margin-bottom: 2rem;
+        }
+    }
+    .content {
+        padding: 3rem;
+
+        @media screen and (max-width: $breakpoint-sm) {
+            padding: 3rem 1rem !important;
         }
     }
 }
