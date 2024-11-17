@@ -1,106 +1,101 @@
 .hero {
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    background-image: url("../../../threedragons/assets/images/banner/banner-home.png");
     padding: 20rem 0rem;
 
     @media screen and (max-width: $breakpoint-sm) {
-        padding: 10rem 0.5rem !important;
-    }
-
-    img {
-        opacity: 0.6;
-        height: 100vh;
-
-        @media screen and (max-width: $breakpoint-xs) {
-            height: 115vh !important;
-        }
+        padding: 10rem 1rem !important;
     }
 }
 
-.philosophy {
-    padding: 0rem;
+// .hero {
+  
 
-    .lantern {
-        @media screen and (max-width: $breakpoint-sm) {
-            width: 100% !important;
-        }
+//     img {
+//         opacity: 0.6;
+//         height: 100vh;
 
-        @media screen and (max-width: $breakpoint-lg) {
-            width: 30%;
-        }
-    }
+//         @media screen and (max-width: $breakpoint-xs) {
+//             height: 115vh !important;
+//         }
+//     }
+// }
 
-    .top-lantern {
-        left: 0;
-    }
+// .philosophy {
+//     padding: 0rem !important;
 
-    .top-right-lantern {
-        right: 0;
+//     .lantern {
+//         @media screen and (max-width: $breakpoint-sm) {
+//             width: 100% !important;
+//         }
 
-        @media screen and (max-width: $breakpoint-sm) {
-            display: none !important;
-        }
-    }
+//         @media screen and (max-width: $breakpoint-lg) {
+//             width: 30%;
+//         }
+//     }
 
-    .content {
-        z-index: 99 !important;
+//     .top-lantern {
+//         left: 0;
 
-        @media screen and (max-width: $breakpoint-sm) {
-            padding-bottom: 0rem !important;
-        }
-    }
-}
+//         @media screen and (max-width: $breakpoint-sm) {
+//             margin-top: -10%;
+//         }
+//     }
 
-.testimony {
-    // img {
-    //     height: 66vh;
-    //     margin-top: -4%;
-    //     position: absolute;
+//     .top-right-lantern {
+//         right: 0;
 
-    //     @media screen and (max-width: $breakpoint-sm) {
-    //         height: 35vh !important;
-    //         margin-top: -4% !important;
-    //         margin-left: 10% !important;
-    //     }
+//         @media screen and (max-width: $breakpoint-sm) {
+//             display: none !important;
+//         }
+//     }
 
-    //     @media screen and (max-width: $breakpoint-lg) {
-    //         height: 36vh;
-    //         margin-top: 2%;
-    //         margin-left: 18%;
-    //     }
-    // }
-}
+//     .content {
+//         z-index: 99 !important;
+//     }
+// }
 
-.reservation-ordering {
-    img {
-        right: 0px !important;
-        height: 50vh;
-    }
+// .reservation-ordering {
+//     @media screen and (max-width: $breakpoint-sm) {
+//         padding-top: 0rem !important;
+//         padding-bottom: 6rem !important;
+//     }
+//     img {
+//         right: 0px !important;
+//         height: 50vh;
+//     }
 
-    h3 {
-        @media screen and (max-width: $breakpoint-sm) {
-            margin-top: 4rem;
-        }
-    }
+//     h3 {
+//         @media screen and (max-width: $breakpoint-sm) {
+//             margin-top: 4rem;
+//         }
+//     }
 
-    .content {
-        position: relative;
+//     .content {
+//         position: relative;
 
-        p {
-            z-index: 9;
-        }
-    }
-}
+//         p {
+//             z-index: 9;
+//         }
+//     }
+// }
 
-.location {
-    p {
-        @media screen and (max-width: $breakpoint-lg) {
-            margin-bottom: 2rem;
-        }
-    }
-    .content {
-        padding: 3rem;
+// .location {
+//     p {
+//         @media screen and (max-width: $breakpoint-lg) {
+//             margin-bottom: 2rem;
+//         }
+//     }
 
-        @media screen and (max-width: $breakpoint-sm) {
-            padding: 3rem 1rem !important;
-        }
-    }
-}
+//     .content {
+//         padding: 3rem;
+
+//         @media screen and (max-width: $breakpoint-sm) {
+//             padding: 3rem 1rem !important;
+//         }
+//     }
+// }

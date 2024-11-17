@@ -1,4 +1,17 @@
 // Titles 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 800 !important;
+    letter-spacing: $spacing-small;
+    text-transform: $uppercase;
+    font-family: $font-title;
+}
+
 h1 {
     font-size: px-to-rem(44px);
 
@@ -59,6 +72,7 @@ p {
         font-size: 15px !important;
     }
 }
+
 strong {
     font-weight: 600;
 }

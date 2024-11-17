@@ -8,12 +8,12 @@
     <meta name="keywords" content="">
     <meta name="author" content="Kahina Ouali">
 
-    <title>Acceuil - THREEDRAGONS</title>
+    <title>Découvrez l'essence de l'Asie dans chaque bouchée - THREEDRAGONS</title>
 
     <!-- Integration de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100..900&display=swap" 
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=ZCOOL+XiaoWei&display=swap" 
     rel="stylesheet">
 
     <!-- Bootstrap CSS -->
@@ -27,40 +27,37 @@
     <!-- Header -->
     <header class="header absolute" id="header">
         <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand uppercase" href="index.html">ThreeDragons</a>
-                <button class="toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="toggler-icon"><i class="fa-solid fa-bars-staggered"></i></span>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">ThreeDragons</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon"><i class="fa-solid fa-bars"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html" aria-label="Accueil">Accueil</a>
+                            <a href="#" class="nav-link">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="a-propos.html" aria-label="À propos">À propos</a>
+                            <a href="#" class="nav-link">À propos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="la-carte.html" aria-label="La carte">La carte</a>
+                            <a href="#" class="nav-link">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="reservation.html" aria-label="Réservation">Réservation</a>
+                            <a href="#" class="nav-link">Reserver</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="commande.html" aria-label="Commande">Commande</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html" aria-label="Contact">Contact</a>
+                            <a href="#" class="nav-link">Contact</a>
                         </li>
                     </ul>
-                    <div class="d-flex modal-languages">
-                        <!-- Button du modal pour les langues -->
-                        <button type="button" class="btn button-modal" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="Choix des langues">
-                            <img src="assets/images/icon/flag/french-flag.png" class="icon-flag" alt="Drapeau Français" aria-label="Drapeau Français">
-                            <span class="flag-name">Français</span> 
-                            <span class="dropdown"><i class="fa-solid fa-angle-down"></i></span>
-                        </button>
-                    </div>
+                </div>
+                <div class="d-flex modal-booking">
+                    <!-- Button du modal pour les langues -->
+                    <button class="btn button-border-light btn-booking">Reserver</button>
+                    <button type="button" class="btn button-modal" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="Choix des langues">
+                        <img src="assets/images/icon/flag/french-flag.png" class="icon-flag" alt="Drapeau Français" aria-label="Drapeau Français">
+                        <span class="dropdown"><i class="fa-solid fa-angle-down"></i></span>
+                    </button>
                 </div>
             </div>
         </nav>
@@ -69,6 +66,27 @@
     <!-- Main -->
     <main class="main" role="main">
         <section class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1>Découvrez l'essence de l'Asie dans chaque bouchée</h1>
+                        <br>
+                        <p>
+                            Chez ThreeDragons, nous combinons les saveurs authentiques du Japon, de la Chine et de la Corée pour créer 
+                            une expérience culinaire unique. Que vous soyez amateur de sushi, de dim sum, ou de bibimbap, laissez-vous 
+                            tenter par une explosion de saveurs venues d'Asie de l'Est. 
+                        </p>
+                        <br>
+                        <br>
+                        <div class="buttons-group text-center">
+                            <a href="menu.html" class="btn button-primary">Explorez nos plats</a>
+                            <a href="reservation.html" class="btn button-border-light">Reservez votre table</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--<section class="hero">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
@@ -254,7 +272,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <div class="card card-feedback">
+                        <div class="card card-feedback mt-2">
                             <p class="text-white">
                                 "Un véritable voyage gustatif. Les saveurs sont authentiques et le service est impeccable." 
                             </p>
@@ -341,7 +359,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
     </main>
 
     <!-- Footer -->
@@ -365,12 +383,6 @@
                             </a>
                         </li>
                         <li class="link-flag">
-                            <a href="ar/index.html" class="flag-name">
-                                <img src="assets/images/icon/flag/arabic-flag.png" class="icon-flag" alt="Drapeau Arabe" aria-label="Drapeau Arabe"> 
-                                <span class="flag-name uppercase">Arabe</span>
-                            </a>
-                        </li>
-                        <li class="link-flag">
                             <a href="zh/index.html" class="flag-name">
                                 <img src="assets/images/icon/flag/chinese-flag.png" class="icon-flag" alt="Drapeau Chinois" aria-label="Drapeau Chinois"> 
                                 <span class="flag-name uppercase">Chinois</span>
@@ -383,12 +395,6 @@
                             </a>
                         </li>
                         <li class="link-flag">
-                            <a href="es/index.html" class="flag-name">
-                                <img src="assets/images/icon/flag/spanish-flag.png" class="icon-flag" alt="Drapeau Espagnol" aria-label="Drapeau Espagnol"> 
-                                <span class="flag-name uppercase">Espagnol</span>
-                            </a>
-                        </li>
-                        <li class="link-flag">
                             <a href="index.html" class="flag-name">
                                 <img src="assets/images/icon/flag/french-flag.png" class="icon-flag" alt="Drapeau Français" aria-label="Drapeau Français"> 
                                 <span class="flag-name uppercase">Français</span>
@@ -398,12 +404,6 @@
                             <a href="ja/index.html" class="flag-name">
                                 <img src="assets/images/icon/flag/japanese-flag.png" class="icon-flag" alt="Drapeau Japonais" aria-label="Drapeau Japonais"> 
                                 <span class="flag-name uppercase">Japonais</span>
-                            </a>
-                        </li>
-                        <li class="link-flag">
-                            <a href="pt/index.html" class="flag-name">
-                                <img src="assets/images/icon/flag/portugeuse-flag.png" class="icon-flag" alt="Drapeau Portugais" aria-label="Drapeau Portugais"> 
-                                <span class="flag-name uppercase">Portugais</span>
                             </a>
                         </li>
                     </ul>

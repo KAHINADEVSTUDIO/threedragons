@@ -1,10 +1,10 @@
-// Pixels to rem 
-@function px-to-rem($px, $base-font-size: 16px) {
-    @return #{$px / $base-font-size}rem;
-}
+// // Pixels to rem 
+// @function px-to-rem($px, $base-font-size: 16px) {
+//     @return #{$px / $base-font-size}rem;
+// }
 
-// Darken color
-@function darken-color($color, $percentage) {
-    @return darken($color, $percentage);
-}
+// // Darken color
+// @function darken-color($color, $percentage) {
+//     @return darken($color, $percentage);
+// }
 

@@ -1,5 +1,5 @@
 body {
-    font-family: $font-family-base;
+    font-family: $font-base;
     font-size: $font-size-base;
     line-height: $line-height-base;
     color: $secondary-color;
@@ -9,7 +9,7 @@ body {
 // Links 
 a {
     color: $secondary-color;
-    font-family: $font-family-base;
+    font-family: $font-base;
     @include transition(color);
 
     &:hover,
@@ -35,19 +35,19 @@ h6 {
     line-height: 1.2;
     letter-spacing: 0.04rem;
     font-weight: $font-weight-bold;
-    font-family: $font-family-title;
+    font-family: $font-title;
 }
 
 // Text 
 p {
-    font-family: $font-family-base;
+    font-family: $font-base;
 }
 
 // Section 
 section {
-    padding: 6rem 0rem;
+    padding: 10rem 0rem;
 
     @media screen and (max-width: $breakpoint-sm) {
-        padding: 5rem 0.5rem !important;
+        padding: 5rem 1rem !important;
     }
 }

@@ -2,12 +2,12 @@
 $primary-color: #292929; 
 $secondary-color: #F4F3EE;
 $tertiary-color: #9A031E;
-$other-color: #2c2c2c;
+$other-color: #cba353;
 
 // Typography
-$font-family-base: "Noto Sans KR", sans-serif;
-$font-family-brand: "Kanit", sans-serif;
-$font-family-title: "Dela Gothic One", sans-serif;
+$font-base: "Noto Sans", sans-serif;
+$font-subtitle: "ZCOOL XiaoWei", sans-serif;
+$font-title: "Gothic A1", sans-serif;
 
 $font-size-base: 18.6px; 
 $line-height-base: 1.5;
@@ -16,9 +16,9 @@ $font-weight-bold: 700;
 
 // Spacing 
 
-$spacing-small: 8px; 
-$spacing-medium: 2rem; 
-$spacing-large: 32px; 
+$spacing-xs: 2.3px;
+$spacing-small: 3px; 
+$spacing-large: 3.5px; 
 
 // Breakpoints
 
@@ -27,3 +27,30 @@ $breakpoint-sm: 576px;
 $breakpoint-md: 768px; 
 $breakpoint-lg: 991px; 
 $breakpoint-xl: 1200px;
+
+// Position 
+
+$position-sticky: sticky; 
+$position-fixed: fixed;
+$position-relative: relative;
+$position-absolute: absolute;
+
+// Display 
+
+$display-block: block;
+$display-flex: flex; 
+$display-none: none;
+
+// Border
+
+$border-thin: 1px;
+$border-solid: solid; 
+$border-light: $border-thin $border-solid $secondary-color;
+
+// Text 
+
+$uppercase: uppercase;
+
+// Animations 
+
+$ease-in-out: all 0.3s ease-in-out;

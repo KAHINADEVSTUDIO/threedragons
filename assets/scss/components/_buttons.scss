@@ -1,34 +1,50 @@
 .btn {
     @include rounded;
-    padding: 15px 35px;
+    padding: 15px 25px;
     border: none;
-    font-family: $font-family-brand;
+    font-size: 13.5px;
+    letter-spacing: $spacing-xs;
+    text-transform: $uppercase;
+    font-family: $font-subtitle;
     @include transition;
 }
 
-.btn-primary {
+.button-border-light {
     color: $secondary-color;
-    background-color: $primary-color;
+    border: $border-light;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $primary-color;
+        background-color: $secondary-color;
+    }
+}
+
+
+.button-primary {
+    color: $secondary-color;
+    background-color: $tertiary-color;
 
     &:hover,
     &:focus,
     &:active {
         color: $secondary-color;
-        background-color: $tertiary-color;
+        background-color: $primary-color;
     }
 }
 
-.btn-secondary {
-    color: $primary-color;
-    background-color: $secondary-color;
+// .btn-secondary {
+//     color: $primary-color;
+//     background-color: $secondary-color;
 
-    &:hover,
-    &:focus,
-    &:active {
-        color: $secondary-color;
-        background-color: #393939;
-    }
-}
+//     &:hover,
+//     &:focus,
+//     &:active {
+//         color: $secondary-color;
+//         background-color: #393939;
+//     }
+// }
 
 .btn-tertiary {
     color: $secondary-color;
