@@ -582,6 +582,7 @@ strong {
 @media screen and (max-width: 576px) {
   .hero {
     padding: 15rem 1rem !important;
+    background-attachment: initial !important;
   }
 }
 
