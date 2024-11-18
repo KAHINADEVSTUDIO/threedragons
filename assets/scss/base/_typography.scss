@@ -6,17 +6,19 @@ h3,
 h4,
 h5,
 h6 {
+    width: 100%;
     font-weight: 800 !important;
     letter-spacing: $spacing-small;
     text-transform: $uppercase;
     font-family: $font-title;
+    word-wrap: break-word;
 }
 
 h1 {
-    font-size: px-to-rem(44px);
+    font-size: 65px;
 
     @media screen and (max-width: $breakpoint-sm) {
-        font-size: px-to-rem(30px);
+        font-size: 30px;
     }
 }
 

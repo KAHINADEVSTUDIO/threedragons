@@ -5,20 +5,26 @@
 .flag-name {
     margin-left: 5px;
     margin-right: 5px;
-    font-size: px-to-rem(16px) !important;
 }
 
 .button-modal {
-    color: $secondary-color;
+    right: 2rem;
+    bottom: 2rem;
+    color: $text-color;
     padding: 0px !important;
     border: none !important;
+    position: $position-fixed;
+
+    img {
+        margin-right: 5px;
+    }
 }
 
 .modal {
 
     .modal-content {
         padding: 1.3rem;
-        background-color: $primary-color;
+        background-color: $background-color;
 
         .modal-header {
             display: flex;
@@ -26,7 +32,7 @@
             border-bottom: none !important;
 
             .close {
-                color: $tertiary-color;
+                color: $text-color;
                 font-size: 24px;
                 background-color: transparent;
                 border: none !important;
@@ -41,10 +47,19 @@
                     padding: 10px;
                     @include rounded;
                     text-align: center;
-                    border: 1px solid $secondary-color;
+                    border: $border-light;
 
-                    .name {
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        .flag-name {
+                            color: $text-color;
+                        }
+                    }
+
+                    .flag-name {
                         margin-right: 0px !important;
+                        @include buttons;
                     }
 
                     &:not(:last-child) {

@@ -1,15 +1,15 @@
-.translations {
-    display: flex;
-    justify-content: center;
+// .translations {
+//     display: flex;
+//     justify-content: center;
 
-    .p-translations {
-        padding: 10px 20px;
-        font-weight: 600;
-        font-size: px-to-rem(15px);
-        border: 1.5px solid $tertiary-color !important;
+//     .p-translations {
+//         padding: 10px 20px;
+//         font-weight: 600;
+//         font-size: px-to-rem(15px);
+//         border: 1.5px solid $tertiary-color !important;
 
-        @media screen and (max-width: $breakpoint-sm) {
-            font-size: px-to-rem(12px) !important;
-        }
-    }
-}
+//         @media screen and (max-width: $breakpoint-sm) {
+//             font-size: px-to-rem(12px) !important;
+//         }
+//     }
+// }

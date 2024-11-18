@@ -12,3 +12,19 @@
 @mixin transition ($property: all, $duration: 0.3s, $ease: ease-in-out) {
     transition: $property $duration $ease;
 }
+
+// Justify content 
+
+@mixin space-between {
+    display: $display-flex !important;
+    justify-content: space-between !important;
+}
+
+// Buttons 
+
+@mixin buttons {
+    font-size: 13px !important;
+    letter-spacing: $spacing-xs;
+    text-transform: $uppercase;
+    font-family: $font-title;
+}

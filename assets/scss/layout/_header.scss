@@ -1,82 +1,213 @@
-header {
+.header {
+    padding: 0px;
     width: 100%;
     z-index: 99;
-    padding: 1rem;
+    border-bottom: $border-light;
 
     .navbar {
+        padding: 0px;
 
-        // Toggler 
+        // Initial {
 
-        .navbar-toggler {
-            border: none !important;
-            background-color: transparent;
-
-            span {
-                color: $secondary-color;
-            }
+        .container-fluid {
+            padding: 0px;
         }
 
-        // Links 
+        .website-name,
+        .menu {
+            display: $display-flex;
+        }
 
-        ul {
-            .nav-item {
-                .nav-link {
-                    font-size: 14px;
-                    font-weight: 500;
-                    text-transform: $uppercase;
-                    font-family: $font-base;
-                    color: $secondary-color;
+        // Website logo & name 
 
-                    &:hover,
-                    &:focus,
-                    &:active {
-                        color: $tertiary-color;
-                        transition: $ease-in-out !important;
+        .website-name {
 
-                        @media screen and (max-width: $breakpoint-lg) {
-                            color: $primary-color;
-                        }
-                    }
+            @media screen and (max-width: $breakpoint-sm) {
+                width: 60%;
+            }
+
+            .logo-a {
+                width: 29%;
+                border-right: $border-light;
+
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    display: $display-none !important;
+                }
+
+                .logo {
+                    width: 80%;
+                    margin-left: 5%;
+                }
+            }
+
+            .name-brand {
+                font-size: 22px;
+                margin-left: 5%;
+                font-weight: 700;
+                padding-top: 7%;
+                text-transform: $uppercase;
+                font-family: $font-subtitle;
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    padding-top: 0% !important;
+                }
+
+                &:hover,
+                &:focus,
+                &:active {
+                    color: $text-color;
                 }
             }
         }
 
-        .navbar-collapse {
-            @media screen and (max-width: $breakpoint-lg) {
-                padding: 3rem;
-                background-color: $tertiary-color;
+        // Menu 
+        .menu {
+            a {
+                font-size: 15px;
+                font-weight: 600;
+                letter-spacing: 1.2px;
+                border-right: $border-light;
+                text-transform: $uppercase;
+                font-family: $font-base;
+
+                @media screen and (max-width: $breakpoint-xl) {
+                    display: $display-none !important;
+                }
+
+                &:nth-child(1) {
+                    border-left: $border-light;
+                }
+
+                &:hover,
+                &:focus,
+                &:active {
+                    color: $accent-color;
+                    transition: $ease-in-out !important;
+                }
+            }
+
+            a,
+            .button-menu {
+                padding: 41px;
+            }
+
+            .button-menu {
+                @media screen and (max-width: $breakpoint-xl) {
+                    border-left: $border-light;
+                }
+
+                i {
+                    font-size: 25px;
+                    margin-top: -5%;
+                }
             }
         }
 
-        // Brand 
+        // Offcanvas
 
-        .navbar-brand {
-            font-size: 22px;
-            font-weight: 700;
-            font-style: italic;
-            color: $other-color;
-            font-family: $font-subtitle;
+        .offcanvas {
+            width: 92%;
+            margin: 5rem;
+            padding: 5rem;
+            background-color: $background-color;
 
             @media screen and (max-width: $breakpoint-sm) {
-                width: 82% !important;
+                width: 85% !important;
+                margin: 3rem 2rem !important;
+                padding: 3rem !important;
             }
 
-            @media screen and (max-width: $breakpoint-lg) {
-                width: 92%;
+            @media screen and (max-width: $breakpoint-xl) {
+                width: 78%;
             }
-        }
 
-        // Modal & Booking 
+            .offcanvas-header,
+            .offcanvas-body {
+                border-bottom: $border-light;
+            }
 
-        .button-modal {
-            right: 1rem;
-            bottom: 2rem;
-            position: $position-fixed;
-        }
+            .offcanvas-header,
+            .offcanvas-footer {
+                @include space-between;
 
-        .btn-booking {
-            @media screen and (max-width: $breakpoint-lg) {
-                display: $display-none !important;
+                h5,
+                h6 {
+                    font-family: $font-subtitle;
+                }
+            }
+
+            .offcanvas-header {
+                padding: 0px 0px 20px 0px !important;
+
+                h5,
+                i {
+                    font-size: 20px;
+                }
+            }
+
+            h5,
+            h6,
+            .close,
+            a {
+                color: $text-color;
+            }
+
+            a {
+                padding: 0px !important;
+                font-size: 20px;
+                border: none !important;
+            }
+
+            .offcanvas-body {
+                padding: 6rem 0rem;
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    padding: 6rem 0rem !important;
+                }
+
+                @media screen and (max-width: $breakpoint-xl) {
+                    padding: 10rem 0rem;
+                }
+
+                ul {
+                    text-align: center;
+                }
+
+
+                .nav-item {
+                    &:not(:last-child) {
+                        margin-bottom: 1rem;
+                    }
+
+                    a {
+                        padding: 0px !important;
+                        font-size: 28px;
+                        border: none !important;
+
+                        @media screen and (max-width: $breakpoint-sm) {
+                            font-size: 20px !important;
+                        }
+
+                        @media screen and (max-width: $breakpoint-xl) {
+                            display: $display-block !important;
+                        }
+                    }
+                }
+            }
+
+            .offcanvas-footer {
+                padding-top: 20px;
+
+                .reseaux {
+                    display: $display-flex;
+
+                    a {
+                        &:not(:last-child) {
+                            margin-right: 10px;
+                        }
+                    }
+                }
             }
         }
     }

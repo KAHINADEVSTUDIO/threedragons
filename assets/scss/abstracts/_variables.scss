@@ -1,8 +1,9 @@
 // Colors 
-$primary-color: #292929; 
-$secondary-color: #F4F3EE;
-$tertiary-color: #9A031E;
-$other-color: #cba353;
+$background-color: #141414; 
+$text-color: #f2ede8;
+$primary-color: #651716;
+$secondary-color: #cba353;
+$accent-color: #a10502;
 
 // Typography
 $font-base: "Noto Sans", sans-serif;
@@ -26,7 +27,8 @@ $breakpoint-xs: 390px;
 $breakpoint-sm: 576px; 
 $breakpoint-md: 768px; 
 $breakpoint-lg: 991px; 
-$breakpoint-xl: 1200px;
+$breakpoint-xl: 1104px;
+$breakpoint-xxl: 1200px;
 
 // Position 
 
@@ -45,7 +47,7 @@ $display-none: none;
 
 $border-thin: 1px;
 $border-solid: solid; 
-$border-light: $border-thin $border-solid $secondary-color;
+$border-light: $border-thin $border-solid $text-color;
 
 // Text 
 

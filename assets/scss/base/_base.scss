@@ -2,13 +2,13 @@ body {
     font-family: $font-base;
     font-size: $font-size-base;
     line-height: $line-height-base;
-    color: $secondary-color;
-    background-color: $primary-color;
+    color: $text-color;
+    background-color: $background-color;
 }
 
 // Links 
 a {
-    color: $secondary-color;
+    color: $text-color;
     font-family: $font-base;
     @include transition(color);
 

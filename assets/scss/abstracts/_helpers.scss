@@ -16,20 +16,6 @@
     position: $position-relative;
 }
 
-// Image
-.image-fixed,
-.image-absolute {
-    left: 0;
-    width: 100%;
-    z-index: -99;
-}
-
-.image-absolute {
-    top: 0;
-    left: 0;
-    position: absolute;
-}
-
 // Text transform
 
 .uppercase {
@@ -46,12 +32,20 @@
     }
 }
 
-// Background color 
-.other-color {
-    background-color: $other-color;
+// Margin 
+
+.mt-2 {
+    margin-top: 2rem !important;
 }
 
-// Colors 
-.text-tertiary {
-    color: $tertiary-color;
+.mb-2 {
+    margin-bottom: 2rem !important;
+}
+
+.mt-3 {
+    margin-top: 3rem !important;
+}
+
+.mb-3 {
+    margin-bottom: 3rem !important;
 }
