@@ -13,8 +13,20 @@
     &:hover,
     &:focus,
     &:active {
-        color: $primary-color;
+        color: $secondary-color;
         background-color: $text-color;
+    }
+}
+
+.button-border-dark {
+    color: $background-color;
+    border: $border-dark;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $accent-color;
+        background-color: $background-color;
     }
 }
 

@@ -25,7 +25,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header absolute" aria-label="Header du site">
+    <header class="header absolute" id="header" aria-label="Header">
         <nav class="navbar">
             <div class="container-fluid">
                 <div class="website-name">
@@ -87,7 +87,6 @@
                                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                                 <a href="#"><i class="fa-brands fa-snapchat"></i></a>   
                                 <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                                <a href="#"></a>
                             </div>
                         </div>
                     </div>
@@ -97,7 +96,7 @@
     </header>
 
     <!-- Main -->
-    <main class="main" role="main">
+    <main class="main" role="main" aria-label="Main">
         <section class="hero">
             <div class="container">
                 <div class="row">
@@ -111,286 +110,231 @@
                 </div>
             </div>
         </section>
-        <!--<section class="hero">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h1 class="uppercase">Découvrez l'essence de l'Asie dans chaque bouchée</h1>
-                        <img src="assets/images/banner/banner-food-home.png" class="asbolute image-absolute" 
-                        alt="Image d'un plat" aria-label="Image d'un plat">
-                        <p class="mt-2"></p>
-                            Chez ThreeDragons, nous combinons les saveurs authentiques du Japon, de la Chine et de la Corée pour créer 
-                            une expérience culinaire unique et halal. Que vous soyez amateur de sushi, de dim sum, ou de bibimbap, 
-                            laissez-vous tenter par une explosion de saveurs venues d'Asie de l'Est.
-                        </p>
-                        <div class="buttons-group text-center mt-2">
-                            <a href="la-carte.html" class="btn btn-primary">Explorez nos plats</a>
-                            <a href="reservation.html" class="btn btn-tertiary">Réservez votre table</a>
+        <section class="philosophy br-t pd-0 br-b">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 col-sm-12 pd-0 text-center">
+                        <div class="pd-10">
+                            <h2>Notre Philosophie</h2>
+                            <h3 class="subtitle">Tradition et Innovation</h3>
                         </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 pd-0 bg-light">
+                        <p class="text-dark pd-10 text-justify mt-2 mb-2">
+                            ThreeDragons est né de la passion pour la cuisine asiatique et du désir de partager les saveurs authentiques de 
+                            l'Asie de l'Est avec le monde entier. Nous sélectionnons les meilleurs ingrédients pour créer des plats qui 
+                            respectent les traditions tout en apportant une touche moderne. Chaque bouchée est un hommage aux richesses 
+                            culturelles du Japon, de la Chine et de la Corée, réunies dans un seul et même endroit.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="philosophy bg-dark">
-            <div class="container">
+        <section class="presentation-menu">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-6">
-                        <img src="assets/images/decoration/lantern-normal.png" class="lantern top-lantern absolute" alt="Lantern rouge" aria-label="Lantern rouge">
-                    </div>
-                    <div class="col-md-6">
-                        <img src="assets/images/decoration/lantern-normal.png" class="lantern top-right-lantern absolute" alt="Lantern rouge" aria-label="Lantern rouge">
-                    </div>
-                    <div class="col-md-12 text-center pd-6 content relative">
-                        <h2 class="uppercase">Notre Philosophie : Tradition et Innovation</h2>
-                        <div class="translations">
-                            <p class="p-translations mt-2 japanese text-white">日本</p>
-                            <p class="p-translations mt-2 chinese text-white">中国</p>
-                            <p class="p-translations mt-2 korean text-white">한국</p>
-                        </div>
-                        <p class="mt-2">
-                            ThreeDragons est né de la passion pour la cuisine asiatique et du désir de partager les saveurs authentiques 
-                            de l'Asie de l'Est avec le monde entier. Nous sélectionnons les meilleurs ingrédients halal pour créer des 
-                            plats qui respectent les traditions tout en apportant une touche moderne. Chaque bouchée est un hommage aux 
-                            richesses culturelles du Japon, de la Chine et de la Corée, réunies dans un seul et même endroit.
-                        </p>
-                        <div class="text-center">
-                            <a href="a-propos.html" class="btn btn-secondary mt-2">
-                                En savoir plus sur nous
-                            </a>
-                        </div>
+                    <div class="col-md-12 br-b text-center br-pd-b">
+                        <h3>Explorez notre menu</h3>
+                        <h4 class="subtitle">Une fusion de saveurs</h4>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="menu-presentation other-color">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h3 class="uppercase">Explorez Notre Menu : Une Fusion de Saveurs</h3>
-                    </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="card card-dish mt-2">
-                            <a href="dim-sum.html">
-                                <img src="assets/images/dish/chinese/dim-sum.png" alt="Dim sum" aria-label="Dim sum">
-                                <div class="dish-button bg-light text-center">
-                                    <div class="content">
-                                        <h4 class="uppercase small-text text-dark">Dim sum</h4>
-                                        <p class="mt-2 small-text text-dark">
-                                            Petites bouchées vapeur, garnies de viande savoureuse et d’épices, idéales 
-                                            pour une expérience culinaire authentique.
-                                        </p>
-                                        <button class="btn btn-primary mt-1">
-                                            Voir le plat
-                                        </button>
-                                    </div>
+                        <div class="card card-dish mt-3">
+                            <img src="assets/img/dish/chinese/dim-sum.png" alt="Dim sum" aria-label="Dim sum">
+                            <div class="dish-button bg-light text-center">
+                                <div class="content">
+                                    <h5 class="text-dark">Dim sum</h5>
+                                    <p class="mt-2 text-dark">
+                                        Petites bouchées vapeur, garnies de viande savoureuse et d’épices, idéales 
+                                        pour une expérience culinaire authentique.
+                                    </p>
+                                    <a href="#" class="btn button-border-dark mt-2">Voir le plat</a>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="card card-dish mt-2">
-                            <a href="sushi-saumon.html">
-                                <img src="assets/images/dish/japanese/salmon-sushi.png" alt="Sushi au saumon" aria-label="Sushi au saumon">
-                                <div class="dish-button bg-light text-center">
-                                    <div class="content">
-                                        <h4 class="uppercase small-text text-dark">Sushi au saumon</h4>
-                                        <p class="mt-2 small-text text-dark">
-                                            Délicieux sushi au saumon frais, servi avec du riz vinaigré et des algues nori.
-                                        </p>
-                                        <button class="btn btn-primary mt-1">
-                                            Voir le plat
-                                        </button>
-                                    </div>
+                        <div class="card card-dish mt-3">
+                            <img src="assets/img/dish/japanese/salmon-sushi.png" alt="Sushi au saumon" aria-label="Sushi au saumon">
+                            <div class="dish-button bg-light text-center">
+                                <div class="content">
+                                    <h5 class="text-dark">Sushi au saumon</h5>
+                                    <p class="mt-2 text-dark">
+                                        Délicieux sushi au saumon frais, servi avec du riz vinaigré et des algues nori.
+                                    </p>
+                                    <a href="#" class="btn button-border-dark mt-2">Voir le plat</a>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="card card-dish mt-2">
-                            <a href="riz-frit-coreen-avec-oeuf.html">
-                                <img src="assets/images/dish/korean/korean-fried-rice.png" alt="Riz frit coréen avec un oeuf" aria-label="Riz frit coréen avec un oeuf">
-                                <div class="dish-button bg-light text-center">
-                                    <div class="content">
-                                        <h4 class="uppercase small-text text-dark">Riz frit coréen avec oeuf</h4>
-                                        <p class="mt-2 small-text text-dark">
-                                            Riz sauté coréen savoureux, garni d’un œuf poêlé et de légumes croquants.
-                                        </p>
-                                        <button class="btn btn-primary mt-1">
-                                            Voir le plat
-                                        </button>
-                                    </div>
+                        <div class="card card-dish mt-3">
+                            <img src="assets/img/dish/korean/korean-fried-rice.png" alt="Riz frit coréen avec un oeuf" aria-label="Riz frit coréen avec un oeuf">
+                            <div class="dish-button bg-light text-center">
+                                <div class="content">
+                                    <h5 class="text-dark">Riz frit coréen avec œuf</h5>
+                                    <p class="mt-2 text-dark">
+                                        Riz sauté coréen savoureux, garni d’un œuf poêlé et de légumes croquants.
+                                    </p>
+                                    <a href="#" class="btn button-border-dark mt-2">Voir le plat</a>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="card card-dish mt-2">
-                            <a href="raviolis-au-poulet.html">
-                                <img src="assets/images/dish/chinese/dumpling.png" alt="Raviolis au poulet" aria-label="Raviolis au poulet">
-                                <div class="dish-button bg-light text-center">
-                                    <div class="content">
-                                        <h4 class="uppercase small-text text-dark">Raviolis au poulet</h4>
-                                        <p class="mt-2 small-text text-dark">
-                                            Raviolis croustillants farcis au poulet mariné et aux légumes.
-                                        </p>
-                                        <button class="btn btn-primary mt-1">
-                                            Voir le plat
-                                        </button>
-                                    </div>
+                        <div class="card card-dish mt-3">
+                            <img src="assets/img/dish/chinese/dumpling.png" alt="Raviolis au poulet" aria-label="Raviolis au poulet">
+                            <div class="dish-button bg-light text-center">
+                                <div class="content">
+                                    <h5 class="text-dark">Raviolis au poulet</h5>
+                                    <p class="mt-2 text-dark">
+                                        Raviolis croustillants farcis au poulet mariné et aux légumes.
+                                    </p>
+                                    <a href="#" class="btn button-border-dark mt-2">Voir le plat</a>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="card card-dish mt-2">
-                            <a href="soup-miso.html">
-                                <img src="assets/images/dish/japanese/miso-soup.png" alt="Soup miso" aria-label="Soup miso">
-                                <div class="dish-button bg-light text-center">
-                                    <div class="content">
-                                        <h4 class="uppercase small-text text-dark">Soup miso</h4>
-                                        <p class="mt-2 small-text text-dark">
-                                            Bouillon miso traditionnel, léger et réconfortant, avec tofu et algues.
-                                        </p>
-                                        <button class="btn btn-primary mt-1">
-                                            Voir le plat
-                                        </button>
-                                    </div>
+                        <div class="card card-dish mt-3">
+                            <img src="assets/img/dish/japanese/miso-soup.png" alt="Soup miso" aria-label="Soup miso">
+                            <div class="dish-button bg-light text-center">
+                                <div class="content">
+                                    <h5 class="text-dark">Soupe miso</h5>
+                                    <p class="mt-2 text-dark">
+                                        Bouillon miso traditionnel, léger et réconfortant, avec tofu et algues.
+                                    </p>
+                                    <a href="#" class="btn button-border-dark mt-2">Voir le plat</a>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="card card-dish mt-2">
-                            <a href="kimchi.html">
-                                <img src="assets/images/dish/korean/kimchi.png" alt="Kimchi" aria-label="Kimchi">
-                                <div class="dish-button bg-light text-center">
-                                    <div class="content">
-                                        <h4 class="uppercase small-text text-dark">Kimchi</h4>
-                                        <p class="mt-2 small-text text-dark">
-                                            Kimchi épicé et fermenté, un classique coréen aux légumes croquants.
-                                        </p>
-                                        <button class="btn btn-primary mt-1">
-                                            Voir le plat
-                                        </button>
-                                    </div>
+                        <div class="card card-dish mt-3">
+                            <img src="assets/img/dish/korean/kimchi.png" alt="Kimchi" aria-label="Kimchi">
+                            <div class="dish-button bg-light text-center">
+                                <div class="content">
+                                    <h5 class="text-dark">Kimchi</h5>
+                                    <p class="mt-2 text-dark">
+                                        Kimchi épicé et fermenté, un classique coréen aux légumes croquants.
+                                    </p>
+                                    <a href="#" class="btn button-border-dark mt-2">Voir le plat</a>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-12 text-center">
-                        <a href="la-carte.html" class="btn btn-secondary mt-2">
-                            Voir le menu complet
+                        <a href="menu.html" class="btn button-border-light mt-3">
+                            Voir le menu
                         </a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="testimony bg-dark">
+        <section class="testimony br-t br-b">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 br-b text-center br-pd-b">
+                        <h3>Avis</h3>
+                        <h4 class="subtitle">Ce que les clients disent</h4>
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-12 text-center">
-                        <h3 class="uppercase">Ce que les clients disent</h3>
-                        <div class="translations">
-                            <p class="p-translations mt-2 japanese text-white">お客様</p>
-                            <p class="p-translations mt-2 chinese text-white">我们的客户</p>
-                            <p class="p-translations mt-2 korean text-white">우리의 고객</p>
-                        </div>
-                    </div>
                     <div class="col-lg-6 col-md-12">
-                        <div class="card card-feedback mt-2">
+                        <div class="card card-feedback mt-2 br-b">
                             <p class="text-white">
                                 "Un véritable voyage gustatif. Les saveurs sont authentiques et le service est impeccable." 
                             </p>
-                            <p class="small-text text-tertiary"><strong>- Isabelle L. -</strong></p>
+                            <p class="small-text text-primary"><strong>- Isabelle L. -</strong></p>
                         </div>
-                        <div class="card card-feedback">
+                        <div class="card card-feedback mt-2 br-b">
                             <p class="text-white">
-                                "Le meilleur restaurant asiatique ou j'ai mangé. Les plats sont frais et délicieux !"
+                                "Le meilleur restaurant ou j'ai mangé. Les plats sont frais et délicieux !"
                             </p>
-                            <p class="small-text text-tertiary"><strong>- Adam O -</strong></p>
+                            <p class="small-text text-primary"><strong>- Adam O -</strong></p>
                         </div>
-                        <div class="card card-feedback">
+                        <div class="card card-feedback mt-2 br-b">
                             <p class="text-white">
-                                "J'aime la diversité du menu. Il y a quelque chose pour tout le monde, et tout est halal !"
+                                "J'aime la diversité du menu. Il y a quelque chose pour tout le monde !"
                             </p>
-                            <p class="small-text text-tertiary"><strong>- Elisa T -</strong></p>
+                            <p class="small-text text-primary"><strong>- Elisa T -</strong></p>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12">
-                        <img src="assets/images/dish/japanese/teriyaki-chicken.png" class="mt-2" alt="Poulet teriyaki" aria-label="Poulet teriyaki">
+                    <div class="col-lg-6 col-md-8 pd-0">
+                        <img src="assets/img/dish/japanese/teriyaki-chicken.png" class="mt-2" alt="Poulet teriyaki" aria-label="Poulet teriyaki">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="reservation-ordering other-color">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center pd-10 content relative">
-                        <h3 class="uppercase text-center">Prêt à Réserver ou à Commander ?</h3>
-                        <p class="mt-2 text-center">
-                            Ne manquez pas l'occasion de vivre une expérience culinaire unique chez ThreeDragons. Que vous souhaitiez réserver 
-                            une table pour une soirée spéciale ou commander vos plats préférés à emporter, nous sommes là pour vous offrir un 
-                            service rapide et de qualité.
-                        </p>
-                        <div class="buttons-group text-center mt-2">
-                            <a href="reservation.html" class="btn btn-secondary">Réservez maintenant</a>
-                            <a href="commande-en-ligne.html" class="btn btn-tertiary">Commandez en ligne</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="location bg-light">
-            <div class="container">
+        <section class="location pd-0 br-b">
+            <div class="container-fluid">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-12">
-                        <h4 class="uppercase text-dark text-center">Nous trouver</h4>
-                        <div class="translations">
-                            <p class="p-translations mt-2 japanese text-dark">レストランの場所</p>
-                            <p class="p-translations mt-2 chinese text-dark">餐厅的位置</p>
-                            <p class="p-translations mt-2 korean text-dark">식당 위치</p>
+                    <div class="col-lg-6 col-md-12 col-sm-12 pd-0 text-center bg-primary">
+                        <div class="pd-10 text-light mt-3 mb-3">
+                            <h3>Location</h3>
+                            <h3 class="subtitle">Nous trouver</h3>
                         </div>
-                        <p class="text-dark mt-2">
-                            Notre restaurant est situé au cœur de la ville, facilement accessible et prêt à vous accueillir. 
-                            Venez découvrir ThreeDragons et profitez d'une atmosphère chaleureuse où chaque détail est pensé 
-                            pour votre confort.
-                        </p>
                     </div>
-                    <div class="col-lg-6 col-md-12 bg-dark">
-                        <div class="content">
-                            <p class="text-white">
-                                <strong>- Adresse :</strong>
-                                <br>
-                                123 Rue de l'Asie, Paris, France
-                                <br>
-                                <br>
-                                <strong>- Horaires :</strong>
-                                <br>
-                                Lundi : 12:00 - 14:30 / 19:00 - 22:30
-                                <br>
-                                Mardi : 12:00 - 14:30 / 19:00 - 22:30
-                                <br>
-                                Mercredi : 12:00 - 14:30 / 19:00 - 22:30
-                                <br>
-                                Jeudi : 12:00 - 14:30 / 19:00 - 22:30
-                                <br>
-                                Vendredi : 12:00 - 14:30 / 19:00 - 23:00
-                                <br>
-                                Samedi : 12:00 - 14:30 / 19:00 - 23:00
-                                <br>
-                                Dimanche : 12:00 - 14:30 / 19:00 - 22:30
-                            </p>
-                        </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 pd-0">
+                        <p class="text-light pd-10 text-justify">
+                            <strong>- Adresse :</strong>
+                            <br>
+                            123 Rue de l'Asie, Paris, France
+                            <br>
+                            <br>
+                            <strong>- Horaires :</strong>
+                            <br>
+                            Lundi - Jeudi : 12:00 - 14:30 / 19:00 - 22:30
+                            <br>
+                            Vendredi - Samedi : 12:30 - 15:00 / 19:30 - 23:00
+                            <br>
+                            Dimanche : 12:00 - 14:30 / 19:00 - 22:30
+                        </p>
                     </div>
                 </div>
             </div>
-        </section>-->
+        </section>
     </main>
 
     <!-- Footer -->
 
-     <!-- Modal -->
-     <button type="button" class="btn button-modal" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="Choix des langues">
+    <footer class="footer" role="footer" aria-label="Footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                    <h5>Adresse</h5>
+                    <p class="text-light mt-2 mb-2">
+                        123 Rue de l'Asie, Paris, France
+                    </p>
+                    <h5>Horaires</h5>
+                    <p class="text-light mt-2 mb-2">
+                        Lundi - Jeudi : 12:00 - 14:30 / 19:00 - 22:30
+                        <br>
+                        Vendredi - Samedi : 12:30 - 15:00 / 19:30 - 23:00
+                        <br>
+                        Dimanche : 12:00 - 14:30 / 19:00 - 22:30
+                    </p>
+                    <h5>Réseaux</h5>
+                    <div class="reseaux mt-2">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-snapchat"></i></a>   
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-12 text-center mt-3">
+                    <h6>&copy; ThreeDragons - 2024 - Site créé par <a href="#"><strong>KahinaStudio</strong></a></h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <button type="button" class="btn button-modal" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="Choix des langues">
         <img src="assets/img/icon/flag/french-flag.png" class="icon-flag" alt="Drapeau Français" aria-label="Drapeau Français">
         <span class="dropdown"><i class="fa-solid fa-angle-down"></i></span>
     </button>

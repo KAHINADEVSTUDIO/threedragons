@@ -42,12 +42,9 @@
             }
 
             .name-brand {
-                font-size: 22px;
                 margin-left: 5%;
-                font-weight: 700;
                 padding-top: 7%;
-                text-transform: $uppercase;
-                font-family: $font-subtitle;
+                @include name-brand;
 
                 @media screen and (max-width: $breakpoint-sm) {
                     padding-top: 0% !important;
@@ -140,6 +137,10 @@
             .offcanvas-header {
                 padding: 0px 0px 20px 0px !important;
 
+                button {
+                    padding: 0px !important;
+                }
+
                 h5,
                 i {
                     font-size: 20px;
@@ -157,6 +158,10 @@
                 padding: 0px !important;
                 font-size: 20px;
                 border: none !important;
+
+                @media screen and (max-width: $breakpoint-xl) {
+                    display: $display-block !important;
+                }
             }
 
             .offcanvas-body {
@@ -188,16 +193,16 @@
                         @media screen and (max-width: $breakpoint-sm) {
                             font-size: 20px !important;
                         }
-
-                        @media screen and (max-width: $breakpoint-xl) {
-                            display: $display-block !important;
-                        }
                     }
                 }
             }
 
             .offcanvas-footer {
                 padding-top: 20px;
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    flex-direction: column !important;
+                }
 
                 .reseaux {
                     display: $display-flex;
@@ -212,3 +217,10 @@
         }
     }
 }
+
+// #header.fixed {
+//     top: 0;
+//     left: 0;
+//     position: $position-fixed;
+//     background-color: $background-color;
+// }

@@ -48,6 +48,7 @@ $display-none: none;
 $border-thin: 1px;
 $border-solid: solid; 
 $border-light: $border-thin $border-solid $text-color;
+$border-dark: $border-thin $border-solid $background-color;
 
 // Text 
 

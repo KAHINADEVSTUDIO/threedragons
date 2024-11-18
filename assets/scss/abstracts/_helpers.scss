@@ -1,3 +1,9 @@
+// Colors 
+
+.color-accent {
+    color: $accent-color !important;
+}
+
 // Position 
 
 .fixed {
@@ -16,20 +22,28 @@
     position: $position-relative;
 }
 
-// Text transform
+// Text
 
 .uppercase {
     text-transform: uppercase;
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 
 // Pading
-.pd-6 {
-    padding: 6rem 0rem;
+.pd-10 {
+    padding: 10rem;
 
     @media screen and (max-width: $breakpoint-sm) {
-        padding: 5rem 0.5rem;
+        padding: 5rem 1rem;
     }
+}
+
+.pd-0 {
+    padding: 0rem !important;
 }
 
 // Margin 
@@ -48,4 +62,22 @@
 
 .mb-3 {
     margin-bottom: 3rem !important;
+}
+
+// Border
+
+.br-t {
+    border-top: $border-light !important;
+}
+
+.br-b {
+    border-bottom: $border-light !important;
+}
+
+.br-pd-b {
+    padding-bottom: 10rem;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        padding-bottom: 5rem !important;
+    }
 }

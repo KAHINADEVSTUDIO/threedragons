@@ -13,6 +13,14 @@
     transition: $property $duration $ease;
 }
 
+// Brand
+@mixin name-brand {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: $uppercase;
+    font-family: $font-subtitle;
+}
+
 // Justify content 
 
 @mixin space-between {

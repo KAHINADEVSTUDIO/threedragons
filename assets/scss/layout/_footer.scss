@@ -1,0 +1,27 @@
+.footer {
+    padding: 6rem 0rem;
+
+    h5 {
+        font-size: 18px !important;
+    }
+
+    p {
+        font-size: 15.6px !important;
+    }
+
+    h6 {
+        font-size: 15px !important;
+
+        a {
+            font-style: italic;
+        }
+    }
+
+    .reseaux {
+        a {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+    }
+}
