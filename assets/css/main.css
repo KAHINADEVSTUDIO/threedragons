@@ -595,7 +595,7 @@ strong {
     padding: 2rem !important;
   }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1104px) {
   .testimony .container .row {
     flex-direction: column-reverse !important;
   }

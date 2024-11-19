@@ -25,7 +25,7 @@
 
     .container {
         .row {
-            @media screen and (max-width: $breakpoint-lg) {
+            @media screen and (max-width: $breakpoint-xl) {
                 flex-direction: column-reverse !important;
             }
         }
