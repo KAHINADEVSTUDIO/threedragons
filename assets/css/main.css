@@ -615,11 +615,6 @@ strong {
   min-height: 60vh;
   background-image: url("../../../threedragons/assets/img/banner/banner-about.png");
 }
-@media screen and (max-width: 991px) {
-  .about-background {
-    background-attachment: fixed !important;
-  }
-}
 
 .share .content {
   padding-left: 2rem;

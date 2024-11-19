@@ -1,10 +1,6 @@
 .about-background {
     min-height: 60vh;
     background-image: url("../../../threedragons/assets/img/banner/banner-about.png");
-
-    @media screen and (max-width: $breakpoint-lg) {
-        background-attachment: fixed !important;
-    }
 }
 
 .share {
