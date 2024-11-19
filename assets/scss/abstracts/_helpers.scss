@@ -81,3 +81,23 @@
         padding-bottom: 5rem !important;
     }
 }
+
+// Section 
+
+.hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+
+    @media screen and (max-width: $breakpoint-lg) {
+        background-attachment: initial !important;
+    }
+}
+.hero-pd {
+    padding: 25rem 0rem;
+
+    @media screen and (max-width: $breakpoint-lg) {
+        padding: 15rem 1rem !important;
+    }
+}

@@ -56,11 +56,11 @@
 }
 
 .br-t {
-  border-top: 1px solid #f2ede8 !important;
+  border-top: 2px solid #f2ede8 !important;
 }
 
 .br-b {
-  border-bottom: 1px solid #f2ede8 !important;
+  border-bottom: 2px solid #f2ede8 !important;
 }
 
 .br-pd-b {
@@ -69,6 +69,27 @@
 @media screen and (max-width: 576px) {
   .br-pd-b {
     padding-bottom: 5rem !important;
+  }
+}
+
+.hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top center;
+}
+@media screen and (max-width: 991px) {
+  .hero {
+    background-attachment: initial !important;
+  }
+}
+
+.hero-pd {
+  padding: 25rem 0rem;
+}
+@media screen and (max-width: 991px) {
+  .hero-pd {
+    padding: 15rem 1rem !important;
   }
 }
 
@@ -243,7 +264,7 @@ strong {
   padding: 0px;
   width: 100%;
   z-index: 99;
-  border-bottom: 1px solid #f2ede8;
+  border-bottom: 2px solid #f2ede8;
 }
 .header .navbar {
   padding: 0px;
@@ -262,7 +283,7 @@ strong {
 }
 .header .navbar .website-name .logo-a {
   width: 29%;
-  border-right: 1px solid #f2ede8;
+  border-right: 2px solid #f2ede8;
 }
 @media screen and (max-width: 576px) {
   .header .navbar .website-name .logo-a {
@@ -293,7 +314,7 @@ strong {
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 1.2px;
-  border-right: 1px solid #f2ede8;
+  border-right: 2px solid #f2ede8;
   text-transform: uppercase;
   font-family: "Noto Sans", sans-serif;
 }
@@ -303,7 +324,7 @@ strong {
   }
 }
 .header .navbar .menu a:nth-child(1) {
-  border-left: 1px solid #f2ede8;
+  border-left: 2px solid #f2ede8;
 }
 .header .navbar .menu a:hover, .header .navbar .menu a:focus, .header .navbar .menu a:active {
   color: #a10502;
@@ -315,7 +336,7 @@ strong {
 }
 @media screen and (max-width: 1104px) {
   .header .navbar .menu .button-menu {
-    border-left: 1px solid #f2ede8;
+    border-left: 2px solid #f2ede8;
   }
 }
 .header .navbar .menu .button-menu i {
@@ -342,7 +363,7 @@ strong {
 }
 .header .navbar .offcanvas .offcanvas-header,
 .header .navbar .offcanvas .offcanvas-body {
-  border-bottom: 1px solid #f2ede8;
+  border-bottom: 2px solid #f2ede8;
 }
 .header .navbar .offcanvas .offcanvas-header,
 .header .navbar .offcanvas .offcanvas-footer {
@@ -457,7 +478,7 @@ strong {
 
 .button-border-light {
   color: #f2ede8;
-  border: 1px solid #f2ede8;
+  border: 2px solid #f2ede8;
 }
 .button-border-light:hover, .button-border-light:focus, .button-border-light:active {
   color: #cba353;
@@ -466,7 +487,7 @@ strong {
 
 .button-border-dark {
   color: #141414;
-  border: 1px solid #141414;
+  border: 2px solid #141414;
 }
 .button-border-dark:hover, .button-border-dark:focus, .button-border-dark:active {
   color: #a10502;
@@ -521,7 +542,7 @@ strong {
 }
 
 .button-modal {
-  right: 2rem;
+  right: 1rem;
   bottom: 2rem;
   color: #f2ede8;
   padding: 0px !important;
@@ -554,7 +575,7 @@ strong {
   padding: 10px;
   border-radius: 6px;
   text-align: center;
-  border: 1px solid #f2ede8;
+  border: 2px solid #f2ede8;
 }
 .modal .modal-content .modal-body .flag-list .link-flag:hover .flag-name, .modal .modal-content .modal-body .flag-list .link-flag:focus .flag-name, .modal .modal-content .modal-body .flag-list .link-flag:active .flag-name {
   color: #f2ede8;
@@ -570,25 +591,14 @@ strong {
   margin-bottom: 20px;
 }
 
-.hero {
+.hero-background {
   min-height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: top center;
   background-image: url("../../../threedragons/assets/img/banner/banner-home.png");
-  padding: 25rem 0rem;
-}
-@media screen and (max-width: 991px) {
-  .hero {
-    padding: 15rem 1rem !important;
-    background-attachment: initial !important;
-  }
 }
 
 .testimony img {
   padding: 5rem;
-  border: 1px solid #f2ede8;
+  border: 2px solid #f2ede8;
 }
 @media screen and (max-width: 576px) {
   .testimony img {
@@ -598,6 +608,25 @@ strong {
 @media screen and (max-width: 1104px) {
   .testimony .container .row {
     flex-direction: column-reverse !important;
+  }
+}
+
+.about-background {
+  min-height: 60vh;
+  background-image: url("../../../threedragons/assets/img/banner/banner-about.png");
+}
+@media screen and (max-width: 991px) {
+  .about-background {
+    background-attachment: fixed !important;
+  }
+}
+
+.share .content {
+  padding-left: 2rem;
+}
+@media screen and (max-width: 991px) {
+  .share .content {
+    padding-left: 0rem;
   }
 }
 
