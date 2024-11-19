@@ -7,7 +7,7 @@
     background-image: url("../../../threedragons/assets/img/banner/banner-home.png");
     padding: 25rem 0rem;
 
-    @media screen and (max-width: $breakpoint-sm) {
+    @media screen and (max-width: $breakpoint-lg) {
         padding: 15rem 1rem !important;
         background-attachment: initial !important;
     }
