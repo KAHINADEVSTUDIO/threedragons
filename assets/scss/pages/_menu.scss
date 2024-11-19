@@ -1,0 +1,77 @@
+.menu-first {
+    padding-top: 15rem !important;
+}
+
+.menu-list {
+    .content,
+    .content-two {
+        @media screen and (max-width: $breakpoint-sm) {
+            padding: 3rem 2rem !important;
+            margin-right: 0rem !important;
+            margin-left: 0rem !important;
+        }
+        @media screen and (max-width: $breakpoint-xxl) {
+            padding: 6rem 3rem;
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+    }
+
+    .content {
+        padding: 6rem;
+        margin-right: 5rem;
+        border: $border-light;
+
+        .dish,
+        .name-price {
+            @include space-between;
+        }
+
+        .dish {
+            padding-bottom: 20px;
+            border-bottom: $border-light;
+
+            @media screen and (max-width: $breakpoint-sm) {
+                flex-direction: column !important;
+            }
+
+            .dish-img {
+                width: 25%;
+
+                @media screen and (max-width: $breakpoint-sm) {
+                    width: 100%;
+                }
+            }
+
+            .infos {
+                margin-top: 20px;
+
+
+                .name-price {
+                    @include space-between;
+                    letter-spacing: 1px;
+                    text-transform: $uppercase;
+                    font-family: $font-subtitle;
+
+                    .price {
+                        font-weight: 800 !important;
+                    }
+                }
+
+                .text {
+                    font-size: 15px !important;
+                }
+            }
+        }
+    }
+
+    .content-two {
+        margin-left: 5rem;
+        margin-right: 0rem;
+        border: $border-dark;
+
+        .dish {
+            border-bottom: $border-dark;
+        }
+    }
+}

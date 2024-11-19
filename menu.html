@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Site internet pour un restaurant asiatique">
+    <meta name="keywords" content="">
+    <meta name="author" content="Kahina Ouali">
+
+    <title>Notre menu - THREEDRAGONS</title>
+
+    <!-- Integration de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=ZCOOL+XiaoWei&display=swap" 
+    rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header absolute" id="header" aria-label="Header">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="website-name">
+                    <a href="index.html" class="logo-a">
+                        <img src="assets/img/logo/logo.png" class="logo" alt="Logo du site" aria-label="Logo du site">
+                    </a>
+                    <a href="index.html" class="name-brand">ThreeDragons</a>
+                </div>
+                <div class="menu">
+                    <a href="menu.html" class="nav-link">
+                        <span>Menu</span>
+                    </a>
+                    <a href="reservation.html" class="nav-link">
+                        <span>Réservation</span>
+                    </a>
+                    <span class="button-menu" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                            <button type="button" class="btn close" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="list-unstyled">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link">
+                                        Accueil
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="a-propos.html" class="nav-link">
+                                        À propos
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="menu.html" class="nav-link">
+                                        Menu
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="reservation.html" class="nav-link">
+                                        Réserver
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact-html" class="nav-link">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="offcanvas-footer">
+                            <h6>Nos réseaux sociaux</h6>
+                            <div class="reseaux">
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-snapchat"></i></a>   
+                                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main" role="main" aria-label="Main">
+        <section class="menu-list menu-first br-b">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+                        <h1 class="md-3 aos-init aos-animation" data-aos="zoom-in" data-aos-delay="300">Plats Coréen</h1>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="content mt-3 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="400">
+                            <div class="dish aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <img src="assets/img/dish/korean/kimchi-jjigae.png" class="dish-img" alt="Kimchi Jjigae" aria-label="Kimchi Jjigae">
+                                <span class="infos">
+                                    <span class="name-price">
+                                        <div class="name">Kimchi Jjigae</div>
+                                        <span class="price">12.50 €</span>
+                                    </span>
+                                    <span class="text">
+                                        Soupe épicée au kimchi, tofu, et poulet
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="dish mt-3 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <img src="assets/img/dish/korean/korean-fried-rice.png" class="dish-img" alt="Riz frit coréen avec oeuf" aria-label="Riz frit coréen avec oeuf">
+                                <span class="infos">
+                                    <span class="name-price">
+                                        <div class="name">Riz frit avec œuf </div>
+                                        <span class="price">9.50 €</span>
+                                    </span>
+                                    <span class="text">
+                                        Riz sauté, légumes frais, et œuf au plat
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="dish mt-3 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <img src="assets/img/dish/korean/kimchi.png" class="dish-img" alt="Kimchi" aria-label="Kimchi">
+                                <span class="infos">
+                                    <span class="name-price">
+                                        <div class="name">Kimchi</div>
+                                        <span class="price">4.50 €</span>
+                                    </span>
+                                    <span class="text">
+                                        Chou fermenté épicé, accompagnement traditionnel
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu-list br-b bg-light">
+            <div class="container-fluid">
+                <div class="row align-items-center flex-lg-row-reverse">
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+                        <h2 class="mb-3 aos-init aos-animation text-dark" data-aos="zoom-in" data-aos-delay="300">Plats Chinois</h2>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="content content-two mt-3 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="400">
+                            <div class="dish aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <img src="assets/img/dish/chinese/dim-sum.png" class="dish-img" alt="Dim Sum" aria-label="Dim Sum">
+                                <span class="infos">
+                                    <span class="name-price text-dark">
+                                        <div class="name">Dim Sum</div>
+                                        <span class="price">8.50 €</span>
+                                    </span>
+                                    <span class="text text-dark">
+                                        Bouchées vapeur farcies au poulet ou légumes
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="dish mt-3 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <img src="assets/img/dish/chinese/nouilles-dan-dan.png" class="dish-img" alt="Nouilles Dan Dan" aria-label="Nouilles Dan Dan">
+                                <span class="infos">
+                                    <span class="name-price text-dark">
+                                        <div class="name">Nouilles Dan Dan</div>
+                                        <span class="price">11.50 €</span>
+                                    </span>
+                                    <span class="text text-dark">
+                                        Nouilles épicées avec sauce aux cacahuètes et boeuf haché
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="dish mt-3 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <img src="assets/img/dish/chinese/dumpling.png" class="dish-img" alt="Raviolis au poulet" aria-label="Raviolis au poulet">
+                                <span class="infos">
+                                    <span class="name-price text-dark">
+                                        <div class="name">Raviolis au poulet</div>
+                                        <span class="price">7.50 €</span>
+                                    </span>
+                                    <span class="text text-dark">
+                                        Raviolis vapeur avec farce au poulet et herbes fraîches
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu-list br-b">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+                        <h3 class="mb-3 aos-init aos-animation" data-aos="zoom-in" data-aos-delay="300">Plats Japonais</h3>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="content mt-3 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="400">
+                            <div class="dish aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <img src="assets/img/dish/japanese/teriyaki.png" class="dish-img" alt="Poulet Teriyaki" aria-label="Poulet Teriyaki">
+                                <span class="infos">
+                                    <span class="name-price">
+                                        <div class="name">Poulet Teriyaki</div>
+                                        <span class="price">13.90 €</span>
+                                    </span>
+                                    <span class="text">
+                                        Poulet grillé avec sauce Teriyaki maison
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="dish mt-3 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <img src="assets/img/dish/japanese/salmon-sushi.png" class="dish-img" alt="Sushi au saumon" aria-label="Sushi au saumon">
+                                <span class="infos">
+                                    <span class="name-price">
+                                        <div class="name">Sushi au saumon</div>
+                                        <span class="price">9.90 €</span>
+                                    </span>
+                                    <span class="text">
+                                        6 pièces, saumon frais sur riz vinaigré
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="dish mt-3 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <img src="assets/img/dish/japanese/miso-soup.png" class="dish-img" alt="Soupe miso" aria-label="Soupe miso">
+                                <span class="infos">
+                                    <span class="name-price">
+                                        <div class="name">Soupe miso</div>
+                                        <span class="price">4.50 €</span>
+                                    </span>
+                                    <span class="text">
+                                        Bouillon de soja, tofu, algues, et ciboulette
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="footer" aria-label="Footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                    <h5>Adresse</h5>
+                    <p class="text-light mt-2 mb-2">
+                        123 Rue de l'Asie, Paris, France
+                    </p>
+                    <h5>Horaires</h5>
+                    <p class="text-light mt-2 mb-2">
+                        Lundi - Jeudi : 12:00 - 14:30 / 19:00 - 22:30
+                        <br>
+                        Vendredi - Samedi : 12:30 - 15:00 / 19:30 - 23:00
+                        <br>
+                        Dimanche : 12:00 - 14:30 / 19:00 - 22:30
+                    </p>
+                    <h5>Réseaux</h5>
+                    <div class="reseaux mt-2">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-snapchat"></i></a>   
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-12 text-center mt-3">
+                    <h6>&copy; ThreeDragons - 2024 Tous droits réservés - Site créé par <a href="#"><strong>KahinaStudio</strong></a></h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Modal -->
+    <button type="button" class="btn button-modal" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="Choix des langues">
+        <img src="assets/img/icon/flag/french-flag.png" class="icon-flag" alt="Drapeau Français" aria-label="Drapeau Français">
+        <span class="dropdown"><i class="fa-solid fa-angle-down"></i></span>
+    </button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title uppercase fs-5" id="exampleModalLabel">Choix des langues</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="flag-list">
+                        <li class="link-flag">
+                            <a href="en/menu.html" class="flag-name">
+                                <img src="assets/img/icon/flag/american-flag.png" class="icon-flag" alt="Drapeau Americain" aria-label="Drapeau Americain"> 
+                                <span class="flag-name uppercase">Anglais</span>
+                            </a>
+                        </li>
+                        <li class="link-flag">
+                            <a href="zh/menu.html" class="flag-name">
+                                <img src="assets/img/icon/flag/chinese-flag.png" class="icon-flag" alt="Drapeau Chinois" aria-label="Drapeau Chinois"> 
+                                <span class="flag-name uppercase">Chinois</span>
+                            </a>
+                        </li>
+                        <li class="link-flag">
+                            <a href="ko/menu.html" class="flag-name">
+                                <img src="assets/img/icon/flag/korean-flag.png" class="icon-flag" alt="Drapeau Coréen" aria-label="Drapeau Coréen"> 
+                                <span class="flag-name uppercase">Coréen</span>
+                            </a>
+                        </li>
+                        <li class="link-flag">
+                            <a href="menu.html" class="flag-name">
+                                <img src="assets/img/icon/flag/french-flag.png" class="icon-flag" alt="Drapeau Français" aria-label="Drapeau Français"> 
+                                <span class="flag-name uppercase">Français</span>
+                            </a>
+                        </li>
+                        <li class="link-flag">
+                            <a href="ja/menu.html" class="flag-name">
+                                <img src="assets/img/icon/flag/japanese-flag.png" class="icon-flag" alt="Drapeau Japonais" aria-label="Drapeau Japonais"> 
+                                <span class="flag-name uppercase">Japonais</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" 
+    crossorigin="anonymous"></script>
+
+    <!-- Main js -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Fonts Awesome -->
+    <script src="https://kit.fontawesome.com/93f593ecee.js" crossorigin="anonymous"></script>
+
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,
+        });
+    </script>
+</body>
+</html>

@@ -93,6 +93,12 @@
   }
 }
 
+@media screen and (max-width: 1104px) {
+  .column-reserve {
+    flex-direction: column-reverse !important;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -623,6 +629,78 @@ strong {
   .share .content {
     padding-left: 0rem;
   }
+}
+
+.menu-first {
+  padding-top: 15rem !important;
+}
+
+@media screen and (max-width: 576px) {
+  .menu-list .content,
+.menu-list .content-two {
+    padding: 3rem 2rem !important;
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .menu-list .content,
+.menu-list .content-two {
+    padding: 6rem 3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+}
+.menu-list .content {
+  padding: 6rem;
+  margin-right: 5rem;
+  border: 2px solid #f2ede8;
+}
+.menu-list .content .dish,
+.menu-list .content .name-price {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.menu-list .content .dish {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f2ede8;
+}
+@media screen and (max-width: 576px) {
+  .menu-list .content .dish {
+    flex-direction: column !important;
+  }
+}
+.menu-list .content .dish .dish-img {
+  width: 25%;
+}
+@media screen and (max-width: 576px) {
+  .menu-list .content .dish .dish-img {
+    width: 100%;
+  }
+}
+.menu-list .content .dish .infos {
+  margin-top: 20px;
+}
+.menu-list .content .dish .infos .name-price {
+  display: flex !important;
+  justify-content: space-between !important;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "ZCOOL XiaoWei", sans-serif;
+}
+.menu-list .content .dish .infos .name-price .price {
+  font-weight: 800 !important;
+}
+.menu-list .content .dish .infos .text {
+  font-size: 15px !important;
+}
+.menu-list .content-two {
+  margin-left: 5rem;
+  margin-right: 0rem;
+  border: 2px solid #141414;
+}
+.menu-list .content-two .dish {
+  border-bottom: 2px solid #141414;
 }
 
 .bg-dark {
