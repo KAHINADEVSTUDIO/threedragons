@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Website for an Asian restaurant">
+    <meta name="keywords" content="">
+    <meta name="author" content="Kahina Ouali">
+
+    <title>私たちのメニュー - THREEDRAGONS</title>
+
+    <!-- Integration de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=ZCOOL+XiaoWei&display=swap" 
+    rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header absolute bg-dark" id="header" aria-label="Header">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="website-name">
+                    <a href="index.html" class="logo-a">
+                        <img src="../assets/img/logo/logo.png" class="logo" alt="Logo" aria-label="Logo">
+                    </a>
+                    <a href="index.html" class="name-brand">ThreeDragons</a>
+                </div>
+                <div class="menu">
+                    <a href="menu.html" class="nav-link">
+                        <span>メニュー</span>
+                    </a>
+                    <a href="tel:+0100000000" class="nav-link">
+                        <span><i class="fa-solid fa-phone"></i> 予約</span>
+                    </a>
+                    <span class="button-menu" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">メニュー</h5>
+                            <button type="button" class="btn close" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="list-unstyled">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link">
+                                        ホーム
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="a-propos.html" class="nav-link">
+                                        私達について
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="menu.html" class="nav-link">
+                                        メニュー
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="tel:+0100000000" class="nav-link">
+                                        <i class="fa-solid fa-phone"></i> 予約 
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact-html" class="nav-link">
+                                        お問い合わせ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="offcanvas-footer">
+                            <h6>ソーシャルメディア</h6>
+                            <div class="reseaux">
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-snapchat"></i></a>   
+                                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main" role="main" aria-label="Main">
+        <section class="intro-menu br-b hero-pd bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="content aos-init aos-animation" data-aos="fade-left" data-aos-delay="300">
+                            <h1 class=" text-dark aos-init aos-animation" data-aos="fade-left" data-aos-delay="400">私たちのメニュー</h1>
+                            <p class="mb-2 text-dark subtitle aos-init aos-animation" data-aos="fade-left" data-aos-delay="500">
+                                韓国料理、中華料理、日本料理
+                            </p>
+                            <a href="#menu" class="btn button-border-dark aos-init aos-animation" data-aos="fade-left" data-aos-delay="600">
+                                メニューを発見する
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero hero-pd hero-menu bg-first-menu br-b" id="menu">
+            <div class="container">
+                <div class="row">
+                    <div class="content aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="300">
+                        <h2 class="text-center aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="400">韓国料理</h2>
+                        <div class="menu-list mt-3">
+                            <div class="dish aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <div class="img-dish">
+                                    <img src="../assets/img/dish/korean/kimchi-jjigae.png" class="dish-img" alt="Kimchi Jjigae" aria-label="Kimchi Jjigae">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">キムチ チゲ</h3>
+                                        <h4 class="price subtitle">12.50 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            キムチ、豆腐、チキンのスパイシーなスープ
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dish mt-2 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <div class="img-dish">
+                                    <img src="../assets/img/dish/korean/korean-fried-rice.png" class="dish-img" alt="Korean fried rice with egg" aria-label="Korean fried rice with egg">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">卵入り韓国チャーハン</h3>
+                                        <h4 class="price subtitle">9.50 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            新鮮な野菜、ご飯、目玉焼き
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dish mt-2 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <div class="img-dish">
+                                    <img src="../assets/img/dish/korean/kimchi.png" class="dish-img" alt="Kimchi" aria-label="Kimchi">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">キムチ</h3>
+                                        <h4 class="price subtitle">4.50 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            伝統的な伴奏にはスパイシーな発酵キャベツが含まれます
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero hero-pd hero-menu bg-second-menu br-b">
+            <div class="container">
+                <div class="row">
+                    <div class="content aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="300">
+                        <h2 class="text-center aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="400">私たちの中国料理</h2>
+                        <div class="menu-list mt-3">
+                            <div class="dish aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <div class="img-dish">
+                                    <img src="../assets/img/dish/chinese/dim-sum.png" class="dish-img" alt="Dim Sum" aria-label="Dim Sum">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">点心</h3>
+                                        <h4 class="price subtitle">8.50 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            蒸し鶏肉や野菜の詰め物
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dish mt-2 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <div class="img-dish">
+                                    <img src="../assets/img/dish/chinese/nouilles-dan-dan.png" class="dish-img" alt="Dan Dan Noddles" aria-label="Dan Dan Noddles">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">ダン ダン ノドルズ</h3>
+                                        <h4 class="price subtitle">11.50 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            ピーナッツソース、ひき肉、スパイシーな麺類
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dish mt-2 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <div class="img-dish">
+                                    <img src="../assets/img/dish/chinese/dumpling.png" class="dish-img" alt="Chicken ravioli" aria-label="Chicken ravioli">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">チキンラビオリ</h3>
+                                        <h4 class="price subtitle">7.50 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            鶏の詰め物と新鮮なハーブでラビオリを蒸した
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero hero-pd hero-menu bg-third-menu br-b">
+            <div class="container">
+                <div class="row">
+                    <div class="content aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="300">
+                        <h2 class="text-center aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="400">日本料理</h2>
+                        <div class="menu-list mt-3">
+                            <div class="dish aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <div class="img-dish">
+                                    <img src="../assets/img/dish/japanese/teriyaki.png" class="dish-img" alt="Teriyaki chicken" aria-label="Teriyaki chicken">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">照り焼きチキン</h3>
+                                        <h4 class="price subtitle">13.90 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            鶏肉のグリル、自家製照り焼きソース
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dish mt-2 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <div class="img-dish">
+                                    <img src="../assets/img/dish/japanese/salmon-sushi.png" class="dish-img" alt="Salmon sushi" aria-label="Salmon sushi">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">サーモン寿司</h3>
+                                        <h4 class="price subtitle">9.90 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            6 個、ビネーグルライスの新鮮なサーモン
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dish mt-2 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <div class="img-dish">
+                                    <img src="../assets/img/dish/japanese/miso-soup.png" class="dish-img" alt="Miso soup" aria-label="Miso soup">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">味噌汁</h3>
+                                        <h4 class="price subtitle">4.50 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            大豆スープ、豆腐、海藻、チャイブ
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer" role="footer" aria-label="Footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                    <h5>アドレス</h5>
+                    <p class="text-light mt-2 mb-2">
+                        123 Rue de l'Asie, Paris, France
+                    </p>
+                    <h5>電話番号</h5>
+                    <p class="text-light mt-2 mb-2">
+                        01 00 00 00 00
+                    </p>
+                    <h5>時間</h5>
+                    <p class="text-light mt-2 mb-2">
+                        月曜日から木曜日 : 12:00 - 14:30 / 19:00 - 22:30
+                        <br>
+                        金曜日 - 土曜日 : 12:30 - 15:00 / 19:30 - 23:00
+                        <br>
+                        日曜日 : 12:00 - 14:30 / 19:00 - 22:30
+                    </p>
+                    <h5>ソーシャルメディア</h5>
+                    <div class="reseaux mt-2">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-snapchat"></i></a>   
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-12 text-center mt-3">
+                    <h6>&copy; ThreeDragons - 2024 すべての権利予約 - によって作成されたウェブサイト <a href="#"><strong>KahinaStudio</strong></a></h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Modal -->
+    <button type="button" class="btn button-modal" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="Selection of languages">
+        <img src="../assets/img/icon/flag/japanese-flag.png" class="icon-flag" alt="日本国旗" aria-label="日本国旗"> 
+        <span class="dropdown"><i class="fa-solid fa-angle-down"></i></span>
+    </button>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title uppercase fs-5" id="exampleModalLabel">言語の選択</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="flag-list">
+                        <li class="link-flag">
+                            <a href="../en/menu.html" class="flag-name">
+                                <img src="../assets/img/icon/flag/american-flag.png" class="icon-flag" alt="英語旗" aria-label="英語旗"> 
+                                <span class="flag-name uppercase">英語</span>
+                            </a>
+                        </li>
+                        <li class="link-flag">
+                            <a href="../zh/menu.html" class="flag-name">
+                                <img src="../assets/img/icon/flag/chinese-flag.png" class="icon-flag" alt="中国国旗" aria-label="中国国旗"> 
+                                <span class="flag-name uppercase">中国語</span>
+                            </a>
+                        </li>
+                        <li class="link-flag">
+                            <a href="../ko/menu.html" class="flag-name">
+                                <img src="../assets/img/icon/flag/korean-flag.png" class="icon-flag" alt="韓国国旗" aria-label="韓国国旗"> 
+                                <span class="flag-name uppercase">韓国語</span>
+                            </a>
+                        </li>
+                        <li class="link-flag">
+                            <a href="../menu.html" class="flag-name">
+                                <img src="../assets/img/icon/flag/french-flag.png" class="icon-flag" alt="フランス国旗" aria-label="フランス国旗"> 
+                                <span class="flag-name uppercase">フランス語</span>
+                            </a>
+                        </li>
+                        <li class="link-flag">
+                            <a href="menu.html" class="flag-name">
+                                <img src="../assets/img/icon/flag/japanese-flag.png" class="icon-flag" alt="日本国旗" aria-label="日本国旗"> 
+                                <span class="flag-name uppercase">日本語</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" 
+    crossorigin="anonymous"></script>
+
+    <!-- Main js -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Fonts Awesome -->
+    <script src="https://kit.fontawesome.com/93f593ecee.js" crossorigin="anonymous"></script>
+
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,
+        });
+    </script>
+</body>
+</html>

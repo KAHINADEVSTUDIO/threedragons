@@ -554,9 +554,12 @@ strong {
   right: 1rem;
   bottom: 2rem;
   color: #f2ede8;
-  padding: 0px !important;
   border: none !important;
   position: fixed;
+  background-color: #141414;
+}
+.button-modal:hover, .button-modal:focus, .button-modal:active {
+  background-color: #141414;
 }
 .button-modal img {
   margin-right: 5px;
@@ -634,6 +637,11 @@ strong {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .intro-menu {
+    padding-bottom: 10rem !important;
+  }
+}
 .intro-menu .content {
   padding: 6rem 0;
   border: 2px solid #141414;
@@ -641,6 +649,11 @@ strong {
 
 .hero-menu {
   min-height: 100vh;
+}
+@media screen and (max-width: 576px) {
+  .hero-menu {
+    padding: 5rem 1rem !important;
+  }
 }
 .hero-menu .content {
   padding: 8rem 4rem;
@@ -652,6 +665,17 @@ strong {
 .hero-menu .content .menu-list .dish {
   display: flex;
 }
+@media screen and (max-width: 576px) {
+  .hero-menu .content .menu-list .dish {
+    flex-direction: column !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hero-menu .content .menu-list .dish .img-dish,
+.hero-menu .content .menu-list .dish .infos {
+    width: 100% !important;
+  }
+}
 .hero-menu .content .menu-list .dish .img-dish {
   width: 20%;
   margin-right: 7%;
@@ -660,6 +684,12 @@ strong {
   width: 80%;
   margin-top: 5%;
   border-bottom: 2px solid #f2ede8;
+}
+@media screen and (max-width: 576px) {
+  .hero-menu .content .menu-list .dish .infos {
+    margin-top: 2rem;
+    padding-bottom: 20px;
+  }
 }
 .hero-menu .content .menu-list .dish .infos .name-price {
   align-items: center;

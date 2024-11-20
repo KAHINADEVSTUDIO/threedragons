@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Website for an Asian restaurant">
+    <meta name="keywords" content="">
+    <meta name="author" content="Kahina Ouali">
+
+    <title>우리의 메뉴를 - THREEDRAGONS</title>
+
+    <!-- Integration de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=ZCOOL+XiaoWei&display=swap" 
+    rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header absolute bg-dark" id="header" aria-label="Header">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="website-name">
+                    <a href="index.html" class="logo-a">
+                        <img src="../assets/img/logo/logo.png" class="logo" alt="Logo" aria-label="Logo">
+                    </a>
+                    <a href="index.html" class="name-brand">ThreeDragons</a>
+                </div>
+                <div class="menu">
+                    <a href="menu.html" class="nav-link">
+                        <span>메뉴</span>
+                    </a>
+                    <a href="tel:+0100000000" class="nav-link">
+                        <span><i class="fa-solid fa-phone"></i> 예약</span>
+                    </a>
+                    <span class="button-menu" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">메뉴</h5>
+                            <button type="button" class="btn close" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="list-unstyled">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link">
+                                        홈
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="a-propos.html" class="nav-link">
+                                        회사 소개
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="menu.html" class="nav-link">
+                                        메뉴 
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="tel:+0100000000" class="nav-link">
+                                        <i class="fa-solid fa-phone"></i> 예약 
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact-html" class="nav-link">
+                                        연락처 
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="offcanvas-footer">
+                            <h6>소셜 미디어</h6>
+                            <div class="reseaux">
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-snapchat"></i></a>   
+                                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main" role="main" aria-label="Main">
+        <section class="intro-menu br-b hero-pd bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="content aos-init aos-animation" data-aos="fade-left" data-aos-delay="300">
+                            <h1 class=" text-dark aos-init aos-animation" data-aos="fade-left" data-aos-delay="400">우리의 메뉴를</h1>
+                            <p class="mb-2 text-dark subtitle aos-init aos-animation" data-aos="fade-left" data-aos-delay="500">
+                                한국、 중국、 일본 요리
+                            </p>
+                            <a href="#menu" class="btn button-border-dark aos-init aos-animation" data-aos="fade-left" data-aos-delay="600">
+                                메뉴를 발견하라
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero hero-pd hero-menu bg-first-menu br-b" id="menu">
+            <div class="container">
+                <div class="row">
+                    <div class="content aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="300">
+                        <h2 class="text-center aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="400">한국 요리</h2>
+                        <div class="menu-list mt-3">
+                            <div class="dish aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <div class="img-dish">
+                                    <img src="../assets/img/dish/korean/kimchi-jjigae.png" class="dish-img" alt="김치 지개" aria-label="김치 지개">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">김치 지개</h3>
+                                        <h4 class="price subtitle">12.50 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            김치、 두부、 닭고기와 매운 수프
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dish mt-2 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <div class="img-dish">
+                                    <img src="../assets/img/dish/korean/korean-fried-rice.png" class="dish-img" alt="계란 한국 볶음밥" aria-label="계란 한국 볶음밥">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">계란 한국 볶음밥</h3>
+                                        <h4 class="price subtitle">9.50 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            신선한 야채、 볶음밥、 계란 후라이
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dish mt-2 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <div class="img-dish">
+                                    <img src="../assets/img/dish/korean/kimchi.png" class="dish-img" alt="김치" aria-label="김치">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">김치</h3>
+                                        <h4 class="price subtitle">4.50 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            전통적인 반주에는 매콤한 발효 양배추가 포함됩니다
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero hero-pd hero-menu bg-second-menu br-b">
+            <div class="container">
+                <div class="row">
+                    <div class="content aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="300">
+                        <h2 class="text-center aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="400">중국 요리의</h2>
+                        <div class="menu-list mt-3">
+                            <div class="dish aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <div class="img-dish">
+                                    <img src="../assets/img/dish/chinese/dim-sum.png" class="dish-img" alt="딤섬" aria-label="딤섬">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">딤섬</h3>
+                                        <h4 class="price subtitle">8.50 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            닭고기 또는 야채 채소
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dish mt-2 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <div class="img-dish">
+                                    <img src="../assets/img/dish/chinese/nouilles-dan-dan.png" class="dish-img" alt="댄 노들즈" aria-label="댄 노들즈">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">댄 노들즈</h3>
+                                        <h4 class="price subtitle">11.50 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            땅콩 소스、 다진 쇠고기、 매운 국수
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dish mt-2 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <div class="img-dish">
+                                    <img src="../assets/img/dish/chinese/dumpling.png" class="dish-img" alt="치킨 라비올리" aria-label="치킨 라비올리">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">치킨 라비올리</h3>
+                                        <h4 class="price subtitle">7.50 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            닭고기 속을 채우고 신선한 허브를 곁들인 찐 라비오리
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero hero-pd hero-menu bg-third-menu br-b">
+            <div class="container">
+                <div class="row">
+                    <div class="content aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="300">
+                        <h2 class="text-center aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="400">일본 요리</h2>
+                        <div class="menu-list mt-3">
+                            <div class="dish aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <div class="img-dish">
+                                    <img src="../assets/img/dish/japanese/teriyaki.png" class="dish-img" alt="데리야끼 치킨" aria-label="데리야끼 치킨">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">데리야끼 치킨</h3>
+                                        <h4 class="price subtitle">13.90 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            수제 데리야끼 소스로 구운 닭고기
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dish mt-2 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <div class="img-dish">
+                                    <img src="../assets/img/dish/japanese/salmon-sushi.png" class="dish-img" alt="Salmon sushi" aria-label="Salmon sushi">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">연어 스시</h3>
+                                        <h4 class="price subtitle">9.90 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            6 조각、 vinaigre 쌀에 신선한 연어
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dish mt-2 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <div class="img-dish">
+                                    <img src="../assets/img/dish/japanese/miso-soup.png" class="dish-img" alt="Miso soup" aria-label="Miso soup">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">된장국</h3>
+                                        <h4 class="price subtitle">4.50 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            간장、 두부、 해초 및 부추
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer" role="footer" aria-label="Footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                    <h5>주소</h5>
+                    <p class="text-light mt-2 mb-2">
+                        123 Rue de l'Asie, Paris, France
+                    </p>
+                    <h5>전화번호</h5>
+                    <p class="text-light mt-2 mb-2">
+                        01 00 00 00 00
+                    </p>
+                    <h5>시간</h5>
+                    <p class="text-light mt-2 mb-2">
+                        월요일 ~ 목요일: 12:00 ~ 14:30 / 19:00 ~ 22:30                        
+                        <br>
+                        금요일 - 토요일: 12:30 - 15:00 / 19:30 - 23:00
+                        <br>
+                        일요일: 12:00 - 14:30 / 19:00 - 22:30
+                    </p>
+                    <h5>소셜 미디어</h5>
+                    <div class="reseaux mt-2">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-snapchat"></i></a>   
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-12 text-center mt-3">
+                    <h6>&copy; ThreeDragons - 2024 판권 소유 - 웹 사이트 <a href="#"><strong>KahinaStudio</strong></a></h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <button type="button" class="btn button-modal" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="언어 선택">
+        <img src="../assets/img/icon/flag/korean-flag.png" class="icon-flag" alt=" 한국 국기" aria-label=" 한국 국기"> 
+        <span class="dropdown"><i class="fa-solid fa-angle-down"></i></span>
+    </button>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title uppercase fs-5" id="exampleModalLabel">언어 선택</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="flag-list">
+                        <li class="link-flag">
+                            <a href="../en/menu.html" class="flag-name">
+                                <img src="../assets/img/icon/flag/american-flag.png" class="icon-flag" alt="미국 국기" aria-label="미국 국기"> 
+                                <span class="flag-name uppercase">미국</span>
+                            </a>
+                        </li>
+                        <li class="link-flag">
+                            <a href="../zh/menu.html" class="flag-name">
+                                <img src="../assets/img/icon/flag/chinese-flag.png" class="icon-flag" alt="중국 국기 " aria-label="중국 국기 "> 
+                                <span class="flag-name uppercase">중국어</span>
+                            </a>
+                        </li>
+                        <li class="link-flag">
+                            <a href="menu.html" class="flag-name">
+                                <img src="../assets/img/icon/flag/korean-flag.png" class="icon-flag" alt=" 한국 국기" aria-label=" 한국 국기"> 
+                                <span class="flag-name uppercase">한국어</span>
+                            </a>
+                        </li>
+                        <li class="link-flag">
+                            <a href="../menu.html" class="flag-name">
+                                <img src="../assets/img/icon/flag/french-flag.png" class="icon-flag" alt="프랑스 국기" aria-label="프랑스 국기"> 
+                                <span class="flag-name uppercase">프랑스어</span>
+                            </a>
+                        </li>
+                        <li class="link-flag">
+                            <a href="../ja/menu.html" class="flag-name">
+                                <img src="../assets/img/icon/flag/japanese-flag.png" class="icon-flag" alt="일본 국기" aria-label="일본 국기"> 
+                                <span class="flag-name uppercase">일본어</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" 
+    crossorigin="anonymous"></script>
+
+    <!-- Main js -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Fonts Awesome -->
+    <script src="https://kit.fontawesome.com/93f593ecee.js" crossorigin="anonymous"></script>
+
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,
+        });
+    </script>
+</body>
+</html>

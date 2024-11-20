@@ -1,4 +1,8 @@
 .intro-menu {
+    @media screen and (max-width: $breakpoint-sm) {
+        padding-bottom: 10rem !important;
+    }
+
     .content {
         padding: 6rem 0;
         border: $border-dark;
@@ -7,6 +11,10 @@
 
 .hero-menu {
     min-height: 100vh;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        padding: 5rem 1rem !important;
+    }
 
     .content {
         padding: 8rem 4rem;
@@ -20,6 +28,17 @@
             .dish {
                 display: $display-flex;
 
+                @media screen and (max-width: $breakpoint-sm) {
+                    flex-direction: column !important;
+                }
+
+                .img-dish,
+                .infos {
+                    @media screen and (max-width: $breakpoint-sm) {
+                        width: 100% !important;
+                    }
+                }
+
                 .img-dish {
                     width: 20%;
                     margin-right: 7%;
@@ -29,6 +48,11 @@
                     width: 80%;
                     margin-top: 5%;
                     border-bottom: $border-light;
+
+                    @media screen and (max-width: $breakpoint-sm) {
+                        margin-top: 2rem;
+                        padding-bottom: 20px;
+                    }
 
                     .name-price {
                         align-items: center;

@@ -11,9 +11,15 @@
     right: 1rem;
     bottom: 2rem;
     color: $text-color;
-    padding: 0px !important;
     border: none !important;
     position: $position-fixed;
+    background-color: $background-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $background-color;
+    }
 
     img {
         margin-right: 5px;
