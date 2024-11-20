@@ -248,7 +248,10 @@ p {
 }
 
 .subtitle {
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
   font-family: "ZCOOL XiaoWei", sans-serif;
 }
 @media screen and (max-width: 576px) {
@@ -357,8 +360,8 @@ strong {
 }
 @media screen and (max-width: 576px) {
   .header .navbar .offcanvas {
-    width: 85% !important;
-    margin: 3rem 2rem !important;
+    width: 90% !important;
+    margin: 1rem !important;
     padding: 3rem !important;
   }
 }
@@ -631,76 +634,56 @@ strong {
   }
 }
 
-.menu-first {
-  padding-top: 15rem !important;
-}
-
-@media screen and (max-width: 576px) {
-  .menu-list .content,
-.menu-list .content-two {
-    padding: 3rem 2rem !important;
-    margin-right: 0rem !important;
-    margin-left: 0rem !important;
-  }
-}
-@media screen and (max-width: 1280px) {
-  .menu-list .content,
-.menu-list .content-two {
-    padding: 6rem 3rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
-  }
-}
-.menu-list .content {
-  padding: 6rem;
-  margin-right: 5rem;
-  border: 2px solid #f2ede8;
-}
-.menu-list .content .dish,
-.menu-list .content .name-price {
-  display: flex !important;
-  justify-content: space-between !important;
-}
-.menu-list .content .dish {
-  padding-bottom: 20px;
-  border-bottom: 2px solid #f2ede8;
-}
-@media screen and (max-width: 576px) {
-  .menu-list .content .dish {
-    flex-direction: column !important;
-  }
-}
-.menu-list .content .dish .dish-img {
-  width: 25%;
-}
-@media screen and (max-width: 576px) {
-  .menu-list .content .dish .dish-img {
-    width: 100%;
-  }
-}
-.menu-list .content .dish .infos {
-  margin-top: 20px;
-}
-.menu-list .content .dish .infos .name-price {
-  display: flex !important;
-  justify-content: space-between !important;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-family: "ZCOOL XiaoWei", sans-serif;
-}
-.menu-list .content .dish .infos .name-price .price {
-  font-weight: 800 !important;
-}
-.menu-list .content .dish .infos .text {
-  font-size: 15px !important;
-}
-.menu-list .content-two {
-  margin-left: 5rem;
-  margin-right: 0rem;
+.intro-menu .content {
+  padding: 6rem 0;
   border: 2px solid #141414;
 }
-.menu-list .content-two .dish {
-  border-bottom: 2px solid #141414;
+
+.hero-menu {
+  min-height: 100vh;
+}
+.hero-menu .content {
+  padding: 8rem 4rem;
+  border: 2px solid #f2ede8;
+}
+.hero-menu .content h2 {
+  margin-bottom: 6rem;
+}
+.hero-menu .content .menu-list .dish {
+  display: flex;
+}
+.hero-menu .content .menu-list .dish .img-dish {
+  width: 20%;
+  margin-right: 7%;
+}
+.hero-menu .content .menu-list .dish .infos {
+  width: 80%;
+  margin-top: 5%;
+  border-bottom: 2px solid #f2ede8;
+}
+.hero-menu .content .menu-list .dish .infos .name-price {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+.hero-menu .content .menu-list .dish .infos .name-price .name {
+  font-size: 23px;
+}
+.hero-menu .content .menu-list .dish .infos .name-price .price {
+  text-align: end;
+  font-size: 24.5px;
+}
+
+.bg-first-menu {
+  background-image: url("../../../threedragons/assets/img/banner/banner-menu-first.png");
+}
+
+.bg-second-menu {
+  background-image: url("../../../threedragons/assets/img/banner/banner-menu-second.png");
+}
+
+.bg-third-menu {
+  background-image: url("../../../threedragons/assets/img/banner/banner-menu-third.png");
 }
 
 .bg-dark {

@@ -28,7 +28,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header absolute" id="header" aria-label="Header">
+    <header class="header absolute bg-dark" id="header" aria-label="Header">
         <nav class="navbar">
             <div class="container-fluid">
                 <div class="website-name">
@@ -41,8 +41,8 @@
                     <a href="menu.html" class="nav-link">
                         <span>Menu</span>
                     </a>
-                    <a href="reservation.html" class="nav-link">
-                        <span>Réservation</span>
+                    <a href="tel:+0100000000" class="nav-link">
+                        <span><i class="fa-solid fa-phone"></i> Réservation</span>
                     </a>
                     <span class="button-menu" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                         <i class="fa-solid fa-bars"></i>
@@ -73,8 +73,8 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="reservation.html" class="nav-link">
-                                        Réserver
+                                    <a href="tel:+0100000000" class="nav-link">
+                                        <i class="fa-solid fa-phone"></i> Réserver
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -99,147 +99,194 @@
     </header>
 
     <main class="main" role="main" aria-label="Main">
-        <section class="menu-list menu-first br-b">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-12 col-sm-12 text-center">
-                        <h1 class="md-3 aos-init aos-animation" data-aos="zoom-in" data-aos-delay="300">Plats Coréen</h1>
+        <section class="intro-menu br-b hero-pd bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="content aos-init aos-animation" data-aos="fade-left" data-aos-delay="300">
+                            <h1 class=" text-dark aos-init aos-animation" data-aos="fade-left" data-aos-delay="400">Notre menu</h1>
+                            <p class="mb-2 text-dark subtitle aos-init aos-animation" data-aos="fade-left" data-aos-delay="500">
+                                Cuisine coréenne, chinoise et japonaise
+                            </p>
+                            <a href="#menu" class="btn button-border-dark aos-init aos-animation" data-aos="fade-left" data-aos-delay="600">
+                                Découvrir le menu
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="content mt-3 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="400">
+                </div>
+            </div>
+        </section>
+        <section class="hero hero-pd hero-menu bg-first-menu br-b" id="menu">
+            <div class="container">
+                <div class="row">
+                    <div class="content aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="300">
+                        <h2 class="text-center aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="400">Nos plats coréen</h2>
+                        <div class="menu-list mt-3">
                             <div class="dish aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
-                                <img src="assets/img/dish/korean/kimchi-jjigae.png" class="dish-img" alt="Kimchi Jjigae" aria-label="Kimchi Jjigae">
-                                <span class="infos">
-                                    <span class="name-price">
-                                        <div class="name">Kimchi Jjigae</div>
-                                        <span class="price">12.50 €</span>
-                                    </span>
-                                    <span class="text">
-                                        Soupe épicée au kimchi, tofu, et poulet
-                                    </span>
-                                </span>
+                                <div class="img-dish">
+                                    <img src="assets/img/dish/korean/kimchi-jjigae.png" class="dish-img" alt="Kimchi Jjigae" aria-label="Kimchi Jjigae">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">Kimchi Jjigae</h3>
+                                        <h4 class="price subtitle">12.50 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            Soupe épicée au kimchi, tofu, et poulet
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="dish mt-3 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
-                                <img src="assets/img/dish/korean/korean-fried-rice.png" class="dish-img" alt="Riz frit coréen avec oeuf" aria-label="Riz frit coréen avec oeuf">
-                                <span class="infos">
-                                    <span class="name-price">
-                                        <div class="name">Riz frit avec œuf </div>
-                                        <span class="price">9.50 €</span>
-                                    </span>
-                                    <span class="text">
-                                        Riz sauté, légumes frais, et œuf au plat
-                                    </span>
-                                </span>
+                            <div class="dish mt-2 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <div class="img-dish">
+                                    <img src="assets/img/dish/korean/korean-fried-rice.png" class="dish-img" alt="Riz frit coréen avec oeuf" aria-label="Riz frit coréen avec oeuf">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">Riz frit coréen avec œuf</h3>
+                                        <h4 class="price subtitle">9.50 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            Riz sauté, légumes frais, et œuf au plat
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="dish mt-3 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
-                                <img src="assets/img/dish/korean/kimchi.png" class="dish-img" alt="Kimchi" aria-label="Kimchi">
-                                <span class="infos">
-                                    <span class="name-price">
-                                        <div class="name">Kimchi</div>
-                                        <span class="price">4.50 €</span>
-                                    </span>
-                                    <span class="text">
-                                        Chou fermenté épicé, accompagnement traditionnel
-                                    </span>
-                                </span>
+                            <div class="dish mt-2 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <div class="img-dish">
+                                    <img src="assets/img/dish/korean/kimchi.png" class="dish-img" alt="Kimchi" aria-label="Kimchi">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">Kimchi</h3>
+                                        <h4 class="price subtitle">4.50 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            Chou fermenté épicé, accompagnement traditionnel
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="menu-list br-b bg-light">
-            <div class="container-fluid">
-                <div class="row align-items-center flex-lg-row-reverse">
-                    <div class="col-lg-6 col-md-12 col-sm-12 text-center">
-                        <h2 class="mb-3 aos-init aos-animation text-dark" data-aos="zoom-in" data-aos-delay="300">Plats Chinois</h2>
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="content content-two mt-3 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="400">
+        <section class="hero hero-pd hero-menu bg-second-menu br-b">
+            <div class="container">
+                <div class="row">
+                    <div class="content aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="300">
+                        <h2 class="text-center aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="400">Nos plats Chinois</h2>
+                        <div class="menu-list mt-3">
                             <div class="dish aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
-                                <img src="assets/img/dish/chinese/dim-sum.png" class="dish-img" alt="Dim Sum" aria-label="Dim Sum">
-                                <span class="infos">
-                                    <span class="name-price text-dark">
-                                        <div class="name">Dim Sum</div>
-                                        <span class="price">8.50 €</span>
-                                    </span>
-                                    <span class="text text-dark">
-                                        Bouchées vapeur farcies au poulet ou légumes
-                                    </span>
-                                </span>
+                                <div class="img-dish">
+                                    <img src="assets/img/dish/chinese/dim-sum.png" class="dish-img" alt="Dim Sum" aria-label="Dim Sum">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">Dim sum</h3>
+                                        <h4 class="price subtitle">8.50 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            Bouchées vapeur farcies au poulet ou légumes
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="dish mt-3 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
-                                <img src="assets/img/dish/chinese/nouilles-dan-dan.png" class="dish-img" alt="Nouilles Dan Dan" aria-label="Nouilles Dan Dan">
-                                <span class="infos">
-                                    <span class="name-price text-dark">
-                                        <div class="name">Nouilles Dan Dan</div>
-                                        <span class="price">11.50 €</span>
-                                    </span>
-                                    <span class="text text-dark">
-                                        Nouilles épicées avec sauce aux cacahuètes et boeuf haché
-                                    </span>
-                                </span>
+                            <div class="dish mt-2 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <div class="img-dish">
+                                    <img src="assets/img/dish/chinese/nouilles-dan-dan.png" class="dish-img" alt="Nouilles Dan Dan" aria-label="Nouilles Dan Dan">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">Nouilles Dan Dan</h3>
+                                        <h4 class="price subtitle">11.50 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            Nouilles épicées avec sauce aux cacahuètes et boeuf haché
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="dish mt-3 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
-                                <img src="assets/img/dish/chinese/dumpling.png" class="dish-img" alt="Raviolis au poulet" aria-label="Raviolis au poulet">
-                                <span class="infos">
-                                    <span class="name-price text-dark">
-                                        <div class="name">Raviolis au poulet</div>
-                                        <span class="price">7.50 €</span>
-                                    </span>
-                                    <span class="text text-dark">
-                                        Raviolis vapeur avec farce au poulet et herbes fraîches
-                                    </span>
-                                </span>
+                            <div class="dish mt-2 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <div class="img-dish">
+                                    <img src="assets/img/dish/chinese/dumpling.png" class="dish-img" alt="Raviolis au poulet" aria-label="Raviolis au poulet">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">Raviolis au poulet</h3>
+                                        <h4 class="price subtitle">7.50 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            Raviolis vapeur avec farce au poulet et herbes fraîches
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="menu-list br-b">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-12 col-sm-12 text-center">
-                        <h3 class="mb-3 aos-init aos-animation" data-aos="zoom-in" data-aos-delay="300">Plats Japonais</h3>
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="content mt-3 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="400">
+        <section class="hero hero-pd hero-menu bg-third-menu br-b">
+            <div class="container">
+                <div class="row">
+                    <div class="content aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="300">
+                        <h2 class="text-center aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="400">Nos plats japonais</h2>
+                        <div class="menu-list mt-3">
                             <div class="dish aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
-                                <img src="assets/img/dish/japanese/teriyaki.png" class="dish-img" alt="Poulet Teriyaki" aria-label="Poulet Teriyaki">
-                                <span class="infos">
-                                    <span class="name-price">
-                                        <div class="name">Poulet Teriyaki</div>
-                                        <span class="price">13.90 €</span>
-                                    </span>
-                                    <span class="text">
-                                        Poulet grillé avec sauce Teriyaki maison
-                                    </span>
-                                </span>
+                                <div class="img-dish">
+                                    <img src="assets/img/dish/japanese/teriyaki.png" class="dish-img" alt="Poulet Teriyaki" aria-label="Poulet Teriyaki">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">Poulet Teriyaki</h3>
+                                        <h4 class="price subtitle">13.90 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            Poulet grillé avec sauce Teriyaki maison
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="dish mt-3 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
-                                <img src="assets/img/dish/japanese/salmon-sushi.png" class="dish-img" alt="Sushi au saumon" aria-label="Sushi au saumon">
-                                <span class="infos">
-                                    <span class="name-price">
-                                        <div class="name">Sushi au saumon</div>
-                                        <span class="price">9.90 €</span>
-                                    </span>
-                                    <span class="text">
-                                        6 pièces, saumon frais sur riz vinaigré
-                                    </span>
-                                </span>
+                            <div class="dish mt-2 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <div class="img-dish">
+                                    <img src="assets/img/dish/japanese/salmon-sushi.png" class="dish-img" alt="Sushi au saumon" aria-label="Sushi au saumon">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">Sushi au saumon</h3>
+                                        <h4 class="price subtitle">9.90 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            6 pièces, saumon frais sur riz vinaigré
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="dish mt-3 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
-                                <img src="assets/img/dish/japanese/miso-soup.png" class="dish-img" alt="Soupe miso" aria-label="Soupe miso">
-                                <span class="infos">
-                                    <span class="name-price">
-                                        <div class="name">Soupe miso</div>
-                                        <span class="price">4.50 €</span>
-                                    </span>
-                                    <span class="text">
-                                        Bouillon de soja, tofu, algues, et ciboulette
-                                    </span>
-                                </span>
+                            <div class="dish mt-2 aos-init aos-animation" data-aos="zoom-in-down" data-aos-delay="500">
+                                <div class="img-dish">
+                                    <img src="assets/img/dish/japanese/miso-soup.png" class="dish-img" alt="Soupe miso" aria-label="Soupe miso">
+                                </div>
+                                <div class="infos">
+                                    <div class="name-price">
+                                        <h3 class="name subtitle">Soupe miso</h3>
+                                        <h4 class="price subtitle">4.50 €</h4>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            Bouillon de soja, tofu, algues, et ciboulette
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -256,6 +303,10 @@
                     <h5>Adresse</h5>
                     <p class="text-light mt-2 mb-2">
                         123 Rue de l'Asie, Paris, France
+                    </p>
+                    <h5>Numéro de téléphone</h5>
+                    <p class="text-light mt-2 mb-2">
+                        01 00 00 00 00
                     </p>
                     <h5>Horaires</h5>
                     <p class="text-light mt-2 mb-2">

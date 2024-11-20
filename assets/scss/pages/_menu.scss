@@ -1,77 +1,63 @@
-.menu-first {
-    padding-top: 15rem !important;
+.intro-menu {
+    .content {
+        padding: 6rem 0;
+        border: $border-dark;
+    }
 }
 
-.menu-list {
-    .content,
-    .content-two {
-        @media screen and (max-width: $breakpoint-sm) {
-            padding: 3rem 2rem !important;
-            margin-right: 0rem !important;
-            margin-left: 0rem !important;
-        }
-        @media screen and (max-width: $breakpoint-xxl) {
-            padding: 6rem 3rem;
-            margin-right: 1rem;
-            margin-left: 1rem;
-        }
-    }
+.hero-menu {
+    min-height: 100vh;
 
     .content {
-        padding: 6rem;
-        margin-right: 5rem;
+        padding: 8rem 4rem;
         border: $border-light;
 
-        .dish,
-        .name-price {
-            @include space-between;
+        h2 {
+            margin-bottom: 6rem;
         }
 
-        .dish {
-            padding-bottom: 20px;
-            border-bottom: $border-light;
+        .menu-list {
+            .dish {
+                display: $display-flex;
 
-            @media screen and (max-width: $breakpoint-sm) {
-                flex-direction: column !important;
-            }
-
-            .dish-img {
-                width: 25%;
-
-                @media screen and (max-width: $breakpoint-sm) {
-                    width: 100%;
+                .img-dish {
+                    width: 20%;
+                    margin-right: 7%;
                 }
-            }
 
-            .infos {
-                margin-top: 20px;
+                .infos {
+                    width: 80%;
+                    margin-top: 5%;
+                    border-bottom: $border-light;
 
+                    .name-price {
+                        align-items: center;
+                        justify-content: space-between;
+                        display: $display-flex;
 
-                .name-price {
-                    @include space-between;
-                    letter-spacing: 1px;
-                    text-transform: $uppercase;
-                    font-family: $font-subtitle;
+                        .name {
+                            font-size: 23px;
+                        }
 
-                    .price {
-                        font-weight: 800 !important;
+                        .price {
+                            text-align: end;
+                            font-size: 24.5px;
+                        }
                     }
                 }
-
-                .text {
-                    font-size: 15px !important;
-                }
             }
         }
     }
+}
 
-    .content-two {
-        margin-left: 5rem;
-        margin-right: 0rem;
-        border: $border-dark;
+.bg-first-menu {
+    background-image: url("../../../threedragons/assets/img/banner/banner-menu-first.png");
+}
 
-        .dish {
-            border-bottom: $border-dark;
-        }
-    }
+.bg-second-menu {
+    background-image: url("../../../threedragons/assets/img/banner/banner-menu-second.png");
+}
+
+.bg-third-menu {
+    background-image: url("../../../threedragons/assets/img/banner/banner-menu-third.png");
 }
