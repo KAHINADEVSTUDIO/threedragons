@@ -218,9 +218,9 @@
     }
 }
 
-// #header.fixed {
-//     top: 0;
-//     left: 0;
-//     position: $position-fixed;
-//     background-color: $background-color;
-// }
+#header.fixed {
+    top: 0;
+    left: 0;
+    position: $position-fixed;
+    background-color: $background-color;
+}

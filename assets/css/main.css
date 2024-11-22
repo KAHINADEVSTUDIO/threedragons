@@ -472,6 +472,13 @@ strong {
   margin-right: 10px;
 }
 
+#header.fixed {
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #141414;
+}
+
 .footer {
   padding: 6rem 0rem;
 }
