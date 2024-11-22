@@ -46,6 +46,14 @@
     padding: 0rem !important;
 }
 
+.pd-3 {
+    padding: 3rem !important;
+}
+
+.pd-b-3 {
+    padding-bottom: 3rem !important;
+}
+
 // Margin 
 
 .mt-2 {
@@ -74,6 +82,10 @@
     border-bottom: $border-light !important;
 }
 
+.border-light {
+    border: $border-light !important;
+}
+
 .br-pd-b {
     padding-bottom: 10rem;
 
@@ -87,7 +99,7 @@
 .hero {
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: initial;
     background-position: top center;
 
     @media screen and (max-width: $breakpoint-lg) {
@@ -98,8 +110,12 @@
 .hero-pd {
     padding: 25rem 0rem;
 
+    @media screen and (max-width: $breakpoint-sm) {
+        padding: 15rem 1rem 10rem 1rem !important;
+    }
+
     @media screen and (max-width: $breakpoint-lg) {
-        padding: 15rem 1rem !important;
+        padding: 20rem 1rem 15rem 1rem;
     }
 }
 

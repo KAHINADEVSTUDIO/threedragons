@@ -1,0 +1,26 @@
+.infos-content {
+    form {
+        @media screen and (max-width: $breakpoint-sm) {
+            padding: 3rem 1.5rem !important;
+        }
+
+        input,
+        select,
+        textarea {
+            padding: 1rem;
+            font-size: 15px !important;
+            color: $text-color;
+            background-color: transparent;
+            border: $border-light;
+            @include text;
+
+            &::placeholder {
+                color: $text-color !important;
+            }
+        }
+
+        button {
+            width: 100%;
+        }
+    }
+}

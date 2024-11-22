@@ -39,6 +39,14 @@
   padding: 0rem !important;
 }
 
+.pd-3 {
+  padding: 3rem !important;
+}
+
+.pd-b-3 {
+  padding-bottom: 3rem !important;
+}
+
 .mt-2 {
   margin-top: 2rem !important;
 }
@@ -63,6 +71,10 @@
   border-bottom: 2px solid #f2ede8 !important;
 }
 
+.border-light {
+  border: 2px solid #f2ede8 !important;
+}
+
 .br-pd-b {
   padding-bottom: 10rem;
 }
@@ -75,7 +87,7 @@
 .hero {
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: initial;
   background-position: top center;
 }
 @media screen and (max-width: 991px) {
@@ -87,9 +99,14 @@
 .hero-pd {
   padding: 25rem 0rem;
 }
+@media screen and (max-width: 576px) {
+  .hero-pd {
+    padding: 15rem 1rem 10rem 1rem !important;
+  }
+}
 @media screen and (max-width: 991px) {
   .hero-pd {
-    padding: 15rem 1rem !important;
+    padding: 20rem 1rem 15rem 1rem;
   }
 }
 
@@ -714,6 +731,33 @@ strong {
 
 .bg-third-menu {
   background-image: url("../../../threedragons/assets/img/banner/banner-menu-third.png");
+}
+
+@media screen and (max-width: 576px) {
+  .infos-content form {
+    padding: 3rem 1.5rem !important;
+  }
+}
+.infos-content form input,
+.infos-content form select,
+.infos-content form textarea {
+  padding: 1rem;
+  font-size: 15px !important;
+  color: #f2ede8;
+  background-color: transparent;
+  border: 2px solid #f2ede8;
+  font-weight: 300;
+  font-size: 18.6px;
+  line-height: 1.5;
+  margin: 3px;
+}
+.infos-content form input::placeholder,
+.infos-content form select::placeholder,
+.infos-content form textarea::placeholder {
+  color: #f2ede8 !important;
+}
+.infos-content form button {
+  width: 100%;
 }
 
 .bg-dark {

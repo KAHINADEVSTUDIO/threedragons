@@ -36,3 +36,11 @@
     text-transform: $uppercase;
     font-family: $font-title;
 }
+
+// Text 
+@mixin text {
+    font-weight: 300;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    margin: $spacing-small;
+}
